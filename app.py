@@ -18,7 +18,7 @@ alat_data = [
         "nama": "Gelas Beker",
         "emoji": "🥛",
         "kategori": "Wadah",
-        "foto": "gelas ukur",
+        "foto": "gelas ukur.jpg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -34,7 +34,7 @@ alat_data = [
         "nama": "Erlenmeyer",
         "emoji": "⚗️",
         "kategori": "Wadah",
-        "foto": "erlenmeyer labu",
+        "foto": "erlenmeyer labu.jpg",
         "fungsi": "Wadah berbentuk kerucut dengan leher sempit, digunakan untuk titrasi dan melarutkan zat.",
         "penjelasan_awam": (
             "Bentuknya seperti botol dengan badan lebar di bawah dan leher sempit di atas. "
@@ -66,7 +66,7 @@ alat_data = [
         "nama": "Pipet Tetes",
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
-        "foto": "pipet tets",
+        "foto": "pipet tets.jpg",
         "fungsi": "Mengambil dan memindahkan cairan dalam jumlah kecil (tetes per tetes).",
         "penjelasan_awam": (
             "Persis seperti pipet obat mata yang ada di rumah! Pencet bagian karet di atas, "
@@ -83,7 +83,7 @@ alat_data = [
         "nama": "Labu Ukur",
         "emoji": "🫧",
         "kategori": "Pengukur Volume",
-        "foto": "labu ukur",
+        "foto": "labu ukur.jpg",
         "fungsi": "Membuat larutan dengan volume yang sangat tepat dan akurat.",
         "penjelasan_awam": (
             "Botol berbentuk buah pir dengan leher panjang yang ada garis tanda batasnya. "
