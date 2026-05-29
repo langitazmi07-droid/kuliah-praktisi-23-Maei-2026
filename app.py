@@ -99,7 +99,7 @@ alat_data = [
         "nama": "Tabung Reaksi",
         "emoji": "🧫",
         "kategori": "Wadah Reaksi",
-        "foto": "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=600&q=80",
+        "foto": "tabung reaksi.jpg",
         "fungsi": "Tempat melakukan reaksi kimia dalam skala kecil.",
         "penjelasan_awam": (
             "Tabung kecil berbentuk silinder panjang yang paling sering kita lihat di film-film sains. "
@@ -149,7 +149,7 @@ alat_data = [
         "nama": "Pembakar Spiritus",
         "emoji": "🔥",
         "kategori": "Sumber Panas",
-        "foto": "https://images.unsplash.com/photo-1601059274987-c5bc0034e3e9?w=600&q=80",
+        "foto": "pembakar spirtus.jpg",
         "fungsi": "Sumber panas utama di laboratorium menggunakan bahan bakar spiritus (alkohol).",
         "penjelasan_awam": (
             "Seperti lilin besar dari logam! Berisi cairan spiritus (alkohol) dan ada sumbu kain di tengahnya. "
