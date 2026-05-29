@@ -34,7 +34,7 @@ alat_data = [
         "nama": "Erlenmeyer",
         "emoji": "⚗️",
         "kategori": "Wadah",
-        "foto": "https://images.unsplash.com/photo-1582719471137-c3967ffaaf84?w=600&q=80",
+        "foto": "burett.jpg",
         "fungsi": "Wadah berbentuk kerucut dengan leher sempit, digunakan untuk titrasi dan melarutkan zat.",
         "penjelasan_awam": (
             "Bentuknya seperti botol dengan badan lebar di bawah dan leher sempit di atas. "
