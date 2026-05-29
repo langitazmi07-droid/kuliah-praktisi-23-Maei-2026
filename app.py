@@ -15,7 +15,7 @@ st.set_page_config(
 alat_data = [
     {
         "id": 1,
-        "nama": "Gelas Beker",
+        "nama": "Gelas Beaker",
         "emoji": "🥛",
         "kategori": "Wadah",
         "foto": "gelas ukur.jpg",
@@ -116,7 +116,7 @@ alat_data = [
         "nama": "Corong",
         "emoji": "🔽",
         "kategori": "Penyaring",
-        "foto": "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=600&q=80",
+        "foto": "corong.jpg",
         "fungsi": "Memindahkan cairan ke wadah bermulut sempit dan menyaring larutan dengan kertas saring.",
         "penjelasan_awam": (
             "Sama persis dengan corong yang dipakai di dapur untuk menuang minyak ke botol! "
@@ -133,7 +133,7 @@ alat_data = [
         "nama": "Kaki Tiga",
         "emoji": "🔱",
         "kategori": "Penyangga",
-        "foto": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=600&q=80",
+        "foto": "kaki tiga.jpg",
         "fungsi": "Penyangga alat gelas saat proses pemanasan di atas pembakar spiritus.",
         "penjelasan_awam": (
             "Seperti kompor kaki tiga kecil dari besi! Diletakkan di atas api, kemudian di atasnya dipasang kawat kasa, "
