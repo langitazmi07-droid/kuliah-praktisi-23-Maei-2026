@@ -50,7 +50,7 @@ alat_data = [
         "nama": "Buret",
         "emoji": "🌡️",
         "kategori": "Pengukur Volume",
-        "foto": "https://github.com/langitazmi07-droid/kuliah-praktisi-23-Maei-2026/blob/aba5eda6a1164acfce574f43b871d6fccf6dc5b2/burett.jpg",
+        "foto": "<img width="1024" height="1536" alt="Image" src="https://github.com/user-attachments/assets/8d71d697-6ae4-4fb3-af76-845a579a4618" />",
         "fungsi": "Tabung panjang bergraduasi untuk mengukur dan mengeluarkan volume larutan secara presisi.",
         "penjelasan_awam": (
             "Seperti spidol raksasa yang bisa menetes larutan secara perlahan dan terukur. "
