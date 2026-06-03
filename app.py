@@ -198,6 +198,7 @@ soal_kuis = [
 # CUSTOM CSS
 # =========================
 st.markdown("""
+<stlye>
 .teks-kustom {
     color: #fcd34d !important; /* Warna kuning emas */
     font-weight: bold;
