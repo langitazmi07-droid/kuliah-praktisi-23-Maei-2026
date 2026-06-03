@@ -567,7 +567,7 @@ elif menu == "ℹ️ About Us":
 elif menu == "📝 Kuis":
 
     st.title("📝 Kuis Peralatan Laboratorium Kimia")
-    st.markdown("<p style='color:#64748b;margin-bottom:28px'>**Uji pemahamanmu tentang alat-alat laboratorium kimia!**</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#64748b;margin-bottom:40px'>Uji pemahamanmu tentang alat-alat laboratorium kimia!</p>", unsafe_allow_html=True)
 
     # Inisialisasi session state
     if "kuis_jawaban" not in st.session_state:
