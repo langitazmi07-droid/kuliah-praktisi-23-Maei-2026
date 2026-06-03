@@ -198,11 +198,6 @@ soal_kuis = [
 # CUSTOM CSS
 # =========================
 st.markdown("""
-<stlye>
-.teks-kustom {
-    color: #fcd34d !important; /* Warna kuning emas */
-    font-weight: bold;
-}
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;600;700&display=swap');
 
 html, body, [class*="css"] {
