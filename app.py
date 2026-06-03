@@ -340,6 +340,12 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
     border: 1px solid rgba(255,255,255,0.1) !important;
     color: #e2e8f0 !important;
     border-radius: 20px !important;
+    
+# Memperbesar ikon toggle sidebar saja
+[data-testid="stSidebarCollapseControl"] button {
+    transform: scale(1.5); /* Mengatur ukuran ikon menjadi 1.5x lebih besar */
+    margin-left: 5px;      /* Menyesuaikan posisi jika perlu */
+}
 }
 </style>
 """, unsafe_allow_html=True)
