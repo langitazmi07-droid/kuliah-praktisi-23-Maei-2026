@@ -348,6 +348,15 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 # SIDEBAR
 # =========================
 with st.sidebar:
+    # Simpan state menu
+    if 'menu_pilihan' not in st.session_state:
+        st.session_state.menu_pilihan = "🏠 Beranda"
+
+    menu = st.radio(
+        "Navigasi",
+        ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ About Us"],
+        key="menu_pilihan" # Kunci ini menghubungkan radio dengan session_state
+    )
     st.markdown("## ⚗️ PENGENALAN ALAT LABORATOTIUM KIMIA")
     st.markdown("<div style='color:#64748b;font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px'>Panduan Visual</div>", unsafe_allow_html=True)
 
