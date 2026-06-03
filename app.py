@@ -551,6 +551,13 @@ elif menu == "📖 Panduan Keselamatan":
             """, unsafe_allow_html=True)
 
 # =========================
+# ── ABOUT US ──
+# =========================
+if menu == "ℹ️ About Us":
+    st.title("About Us")
+    st.write("Aplikasi ini dibuat untuk membantu siswa memahami alat laboratorium kimia dengan cara yang interaktif.")
+
+# =========================
 # ── KUIS ──
 # =========================
 elif menu == "📝 Kuis":
