@@ -418,7 +418,7 @@ if menu == "🏠 Beranda":
         with cols[i]:
             st.markdown(f"""
             <div class='card-alat'>
-                <div style='font-size:36px;margin-bottom:8px'>{alat['emoji']}</div>
+                <div style='font-size:36px;margin-bottom:8px'>{alat[]}</div>
                 <h3 style='margin-bottom:6px;font-size:18px'>{alat['nama']}</h3>
                 <span class='badge'>{alat['kategori']}</span>
                 <p style='color:#94a3b8;font-size:13px;margin-top:10px;line-height:1.5'>{alat['fungsi']}</p>
