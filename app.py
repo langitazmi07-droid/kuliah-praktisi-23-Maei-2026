@@ -667,6 +667,6 @@ elif menu == "📝 Kuis":
 # =========================
 st.markdown("""
 <div class='footer'>
-    © 2026 Website Laboratorium Kimia &nbsp;·&nbsp; Dibuat dengan ❤️ menggunakan Streamlit ⚗️
+    Dibuat untuk mengampu Project matkul Logika Pemrograman Komputer semester 2 Politeknik AKA Bogor
 </div>
 """, unsafe_allow_html=True)
