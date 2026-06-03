@@ -234,7 +234,7 @@ h3 { font-family: 'Syne', sans-serif !important; font-weight: 700 !important; co
     padding: 20px;
     margin-bottom: 16px;
     transition: all 0.3s;
-    min-height: 250px;
+    min-height: 200px;
 }
 .card-alat:hover {
     border-color: rgba(59,130,246,0.4);
