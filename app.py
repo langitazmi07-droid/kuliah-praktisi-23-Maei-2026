@@ -418,7 +418,8 @@ if menu == "🏠 Beranda":
         caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
     )
 
-    st.info("💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!")
+    st.info(
+       <div style='color:#fca5a5'>;"💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!")
 
     st.markdown("---")
     st.markdown("### ⚡ Preview Alat")
