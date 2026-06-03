@@ -422,8 +422,7 @@ if menu == "🏠 Beranda":
         caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
     )
 
-    st.info("💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!")
-    st.markdown("<p class='teks-kustom'>Teks ini menggunakan warna dari kelas CSS kustom.</p>", unsafe_allow_html=True)
+    st.info("<p class='teks-kustom'>💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!</p>", unsafe_allow_html=True)
     
     st.markdown("---")
     st.markdown("### ⚡ Preview Alat")
