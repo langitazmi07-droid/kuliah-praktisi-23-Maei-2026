@@ -214,7 +214,7 @@ html, body, [class*="css"] {
 section[data-testid="stSidebar"] {
     background: rgba(15, 23, 42, 0.95) !important;
     border-right: 1px solid rgba(255,255,255,0.07);
-    width: 350px;
+    width: 300px;
 }
 
 section[data-testid="stSidebar"] * {
