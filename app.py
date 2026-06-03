@@ -199,6 +199,9 @@ soal_kuis = [
 # =========================
 st.markdown("""
 <style>
+.teks-kustom {
+    color: #fcd34d !important; 
+    font-weight: bold;
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;600;700&display=swap');
 
 html, body, [class*="css"] {
@@ -345,7 +348,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 [data-testid="stSidebarCollapseControl"] button {
     transform: scale(2); 
     margin-left: 4px;      
-}
+    }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -418,8 +421,7 @@ if menu == "🏠 Beranda":
         caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
     )
 
-    st.info(
-       <div style='color:#fca5a5'>;"💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!")
+    st.info("<p class='teks-kustom'>💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!")
 
     st.markdown("---")
     st.markdown("### ⚡ Preview Alat")
