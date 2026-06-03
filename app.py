@@ -403,7 +403,7 @@ if menu == "🏠 Beranda":
     st.image(
         "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80",
         use_container_width=True,
-        caption="Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah." - CG Jung,
+        caption="Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung",
     )
 
     st.info("💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!")
