@@ -352,7 +352,7 @@ with st.sidebar:
 
     menu = st.radio(
         "Navigasi",
-        ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis"],
+        ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ About Us"],
         label_visibility="collapsed"
     )
 
