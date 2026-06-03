@@ -234,6 +234,7 @@ h3 { font-family: 'Syne', sans-serif !important; font-weight: 700 !important; co
     padding: 20px;
     margin-bottom: 16px;
     transition: all 0.3s;
+    min-height: 250px;
 }
 .card-alat:hover {
     border-color: rgba(59,130,246,0.4);
@@ -386,7 +387,7 @@ if menu == "🏠 Beranda":
             </span>
         </h1>
         <p style='color:#94a3b8;font-size:17px;max-width:500px;margin:0 auto 30px;line-height:1.7'>
-            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan.
+            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -396,7 +397,7 @@ if menu == "🏠 Beranda":
     c1.metric("🧪 Total Alat", "9")
     c2.metric("📁 Kategori", "5")
     c3.metric("📝 Soal Kuis", "5")
-    c4.metric("📸 Foto Nyata", "9")
+    c4.metric("📸 Foto Alat", "9")
 
     st.markdown("---")
 
