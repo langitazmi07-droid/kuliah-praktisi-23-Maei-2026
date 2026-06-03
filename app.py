@@ -553,7 +553,7 @@ elif menu == "📖 Panduan Keselamatan":
 # =========================
 # ── ABOUT US ──
 # =========================
-if menu == "ℹ️ About Us":
+elif menu == "ℹ️ About Us":
     st.title("About Us")
     st.write("Aplikasi ini dibuat untuk membantu siswa memahami alat laboratorium kimia dengan cara yang interaktif.")
 
