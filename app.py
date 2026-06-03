@@ -4,7 +4,7 @@ import streamlit as st
 # KONFIGURASI HALAMAN
 # =========================
 st.set_page_config(
-    page_title="Alat Laboratorium Kimia",
+    page_title="Pengenalan Alat Laboratorium Kimia",
     page_icon="⚗️",
     layout="wide"
 )
@@ -347,12 +347,12 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 # SIDEBAR
 # =========================
 with st.sidebar:
-    st.markdown("## ⚗️ LAB KIMIA")
+    st.markdown("## ⚗️ PENGENALAN ALAT LABORATOTIUM KIMIA")
     st.markdown("<div style='color:#64748b;font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px'>Panduan Visual</div>", unsafe_allow_html=True)
 
     menu = st.radio(
-        "Navigasi",
-        ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ About Us"],
+        "PETUNJUK",
+        ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"],
         label_visibility="collapsed"
     )
 
@@ -404,7 +404,7 @@ if menu == "🏠 Beranda":
     st.image(
         "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80",
         use_container_width=True,
-        caption="Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung",
+        caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
     )
 
     st.info("💡 **Tips:** Klik menu **Alat Laboratorium** di sidebar untuk melihat foto dan penjelasan detail setiap alat, atau langsung coba **Kuis** untuk uji pemahamanmu!")
