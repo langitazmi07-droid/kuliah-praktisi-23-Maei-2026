@@ -162,8 +162,8 @@ alat_data = [
         "warna_hex": "#f97316",
     },
     {
-        "id": 1,
-        "nama": "Gelas Beaker",
+        "id": 10,
+        "nama": "Kaca Arloji",
         "emoji": "🥛",
         "kategori": "Wadah",
         "foto": "gelas ukur.jpg",
@@ -178,8 +178,8 @@ alat_data = [
         "warna_hex": "#3b82f6",
     },
     {
-        "id": 1,
-        "nama": "Gelas Beaker",
+        "id": 11,
+        "nama": "Gelas Porselen",
         "emoji": "🥛",
         "kategori": "Wadah",
         "foto": "gelas ukur.jpg",
@@ -194,8 +194,24 @@ alat_data = [
         "warna_hex": "#3b82f6",
     },
     {
-        "id": 1,
-        "nama": "Gelas Beaker",
+        "id": 12,
+        "nama": "Segitiga Pembakar",
+        "emoji": "🥛",
+        "kategori": "Penyangga",
+        "foto": "gelas ukur.jpg",
+        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "penjelasan_awam": (
+            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
+            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+        ),
+        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
+        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "ukuran": "50 mL – 2000 mL",
+        "warna_hex": "#3b82f6",
+    },
+    {
+        "id": 13,
+        "nama": "Desikator",
         "emoji": "🥛",
         "kategori": "Wadah",
         "foto": "gelas ukur.jpg",
@@ -210,10 +226,26 @@ alat_data = [
         "warna_hex": "#3b82f6",
     },
     {
-        "id": 1,
-        "nama": "Gelas Beaker",
+        "id": 14,
+        "nama": "Pipet Mohr",
         "emoji": "🥛",
-        "kategori": "Wadah",
+        "kategori": "Pemindah Cairan",
+        "foto": "gelas ukur.jpg",
+        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "penjelasan_awam": (
+            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
+            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+        ),
+        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
+        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "ukuran": "50 mL – 2000 mL",
+        "warna_hex": "#3b82f6",
+    },
+    {
+        "id": 14,
+        "nama": "Pipet Volumetri",
+        "emoji": "🥛",
+        "kategori": "Pemindah Cairan",
         "foto": "gelas ukur.jpg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
