@@ -161,6 +161,70 @@ alat_data = [
         "ukuran": "Kapasitas ±150 mL spiritus",
         "warna_hex": "#f97316",
     },
+    {
+        "id": 1,
+        "nama": "Gelas Beaker",
+        "emoji": "🥛",
+        "kategori": "Wadah",
+        "foto": "gelas ukur.jpg",
+        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "penjelasan_awam": (
+            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
+            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+        ),
+        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
+        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "ukuran": "50 mL – 2000 mL",
+        "warna_hex": "#3b82f6",
+    },
+    {
+        "id": 1,
+        "nama": "Gelas Beaker",
+        "emoji": "🥛",
+        "kategori": "Wadah",
+        "foto": "gelas ukur.jpg",
+        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "penjelasan_awam": (
+            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
+            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+        ),
+        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
+        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "ukuran": "50 mL – 2000 mL",
+        "warna_hex": "#3b82f6",
+    },
+    {
+        "id": 1,
+        "nama": "Gelas Beaker",
+        "emoji": "🥛",
+        "kategori": "Wadah",
+        "foto": "gelas ukur.jpg",
+        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "penjelasan_awam": (
+            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
+            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+        ),
+        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
+        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "ukuran": "50 mL – 2000 mL",
+        "warna_hex": "#3b82f6",
+    },
+    {
+        "id": 1,
+        "nama": "Gelas Beaker",
+        "emoji": "🥛",
+        "kategori": "Wadah",
+        "foto": "gelas ukur.jpg",
+        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "penjelasan_awam": (
+            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
+            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+        ),
+        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
+        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "ukuran": "50 mL – 2000 mL",
+        "warna_hex": "#3b82f6",
+    },
 ]
 
 # =========================
