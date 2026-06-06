@@ -770,7 +770,7 @@ elif menu == "📝 Kuis":
         with col_b:
             if st.button("🔍 Pelajari Alat Laboratorium", use_container_width=True):
                 st.session_state.current_menu = "🔬 Alat Laboratorium"
-                st.help("Klik menu 'Alat Laboratorium'")
+                st.popover("Klik menu 'Alat Laboratorium'")
                 st.rerun()
             
 
