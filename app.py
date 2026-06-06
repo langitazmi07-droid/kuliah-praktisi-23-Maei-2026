@@ -825,7 +825,16 @@ def render_instrumen_analitik(foto_map: dict = None):
         st.metric("Spektroskopi", sum(1 for i in instrumen_data if i["kategori"] == "Spektroskopi"))
     with col4:
         st.metric("Kromatografi", sum(1 for i in instrumen_data if i["kategori"] == "Kromatografi"))
- 
+
+        st.markdown("""
+    <div style="
+        text-align: center;
+    ">
+        <p style="color:#94a3b8; font-size:1.05rem; margin:0;">
+            🧪 Instrumen Analitik Laboratorium Kimia - Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
     st.markdown("---")
  
     # ── Filter ───────────────────────────────────────────────
@@ -840,16 +849,6 @@ def render_instrumen_analitik(foto_map: dict = None):
  
     st.markdown(f"<p style='color:#64748b; font-size:13px;'>Menampilkan {len(tampil)} instrumen</p>",
                 unsafe_allow_html=True)
-
-    st.markdown("""
-    <div style="
-        text-align: center;
-    ">
-        <p style="color:#94a3b8; font-size:1.05rem; margin:0;">
-            🧪 Instrumen Analitik Laboratorium Kimia - Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
  
     # ── Daftar Instrumen ─────────────────────────────────────
     for instrumen in tampil:
