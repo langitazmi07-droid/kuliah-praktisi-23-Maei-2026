@@ -596,12 +596,13 @@ elif menu == "🔬 Alat Laboratorium":
     st.markdown("### 📊 Ringkasan Semua Alat")
     import pandas as pd
     df = pd.DataFrame([
-        [{
+        {
             "Alat": f"{a['emoji']} {a['nama']}",
             "Kategori": a["kategori"],
             "Fungsi": a["fungsi"],
             "Ukuran": a["ukuran"],
-        }]
+        }
+    ]}
 
 # 3. Menampilkan tabel
 # Dalam terminal, ini akan terlihat rapi dengan rata kiri.
@@ -635,7 +636,6 @@ try:
 except Exception as e:
     print(f"\nGagal membuat file Excel: {e}")
         for a in alat_data
-    ])
     st.dataframe(df, use_container_width=True, hide_index=True)
 
 # =========================
