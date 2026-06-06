@@ -570,6 +570,7 @@ instrumen_data = [
         ],
         "warna_hex": "#f97316",
     },
+    {
             "id": 10,
         "nama": "Conductivity Meter",
         "nama_lengkap": "Conductivity Meter",
@@ -600,32 +601,32 @@ instrumen_data = [
         "warna_hex": "#f97316",
     },
     {
-        "id": 9,
-        "nama": "Turbidimeter",
-        "nama_lengkap": "Turbidimeter",
+        "id": 11,
+        "nama": "Refraktometer",
+        "nama_lengkap": "Refraktometer",
         "emoji": "⚡",
         "kategori": "Analisis Logam",
-        "foto": "Turbidimeter",
+        "foto": "Refraktometer.jpeg",
         "penjelasan": (
-            "Turbidimeter digunakan untuk mengukur tingkat kekeruhan suatu sampel air."
+            "Refraktometer digunakan untuk mengukur indeks bias suatu larutan yang berkaitan dengan konsentrasi zat terlarut."
         ),
         "fungsi": [
-            "Pengujian kualitas air minum."
-            "AMonitoring limbah cair.",
-            "Analisis proses pengolahan air.",
+            "Penentuan kadar gula (°Brix)."
+            "Analisis makanan dan minuman.",
+            "Pengendalian kualitas produk.",
         ],
         "cara_kerja": [
-            "Sampel dimasukkan ke dalam vial.",
-            "Vial ditempatkan pada ruang ukur.",
-            "Cahaya dipancarkan ke sampel.",
-            "Partikel dalam sampel menghamburkan cahaya.",
-            "Detektor mengukur intensitas hamburan cahaya.",
-            "Hasil ditampilkan dalam satuan NTU (Nephelometric Turbidity Unit.",
+            "Membersihkan prisma.",
+            "Meneteskan sampel pada prisma.",
+            "Menutup penutup prisma.",
+            "Cahaya dilewatkan melalui sampel.",
+            "Alat mengukur indeks bias.",
+            "Nilai konsentrasi ditampilkan pada layar atau skala.",
         ],
         "bahaya": [
-            "Pecahnya vial kaca.",
-            "Paparan sampel limbah yang berbahaya.",
-            "Kontaminasi silang antar sampel.",
+            "Prisma mudah tergores atau pecah.",
+            "Paparan bahan kimia korosif.",
+            "Kontaminasi sampel.",
         ],
         "warna_hex": "#f97316",
     },
