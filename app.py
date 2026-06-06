@@ -807,7 +807,7 @@ def render_instrumen_analitik(foto_map: dict = None):
         margin-bottom: 32px;
         text-align: center;
     ">
-        <h1 style="font-size:2.2rem; margin:0 0 10px 0;">🔬 Instrumen Analitik Laboratorium</h1>
+        <h1 style="font-size:2.2rem; margin:0 0 10px 0;">🧪 Instrumen Analitik Laboratorium</h1>
         <p style="color:#94a3b8; font-size:1.05rem; margin:0;">
             Peralatan canggih untuk analisis kimia tingkat lanjut
         </p>
@@ -826,13 +826,12 @@ def render_instrumen_analitik(foto_map: dict = None):
     with col4:
         st.metric("Kromatografi", sum(1 for i in instrumen_data if i["kategori"] == "Kromatografi"))
 
-        st.markdown("""
-    <div style="
-        text-align: center;
-    ">
-        <p style="color:#94a3b8; font-size:1.05rem; margin:0;">
-            🧪 Instrumen Analitik Laboratorium Kimia - Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
-        </p>
+    st.markdown("""
+    <div style='text-align:center; color:#64748b; font-size:13px; 
+         margin-top:40px; padding:16px;
+         border-top:1px solid rgba(255,255,255,0.06)'>
+         text-align: center;
+         🧪 Instrumen Analitik Laboratorium Kimia - Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
     </div>
     """, unsafe_allow_html=True)
     st.markdown("---")
