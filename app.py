@@ -534,6 +534,7 @@ if menu == "🏠 Beranda":
                 <p style='color:#94a3b8;font-size:13px;margin-top:10px;line-height:1.5'>{alat['fungsi']}</p>
             </div>
             """, unsafe_allow_html=True)
+            
 # =========================
 # ── ALAT LABORATORIUM ──
 # =========================
@@ -601,10 +602,99 @@ elif menu == "🔬 Alat Laboratorium":
             "Fungsi": a["fungsi"],
             "Ukuran": a["ukuran"],
         }
+
+# 3. Menampilkan tabel
+# Dalam terminal, ini akan terlihat rapi dengan rata kiri.
+# Untuk kebutuhan ekspor, kita bisa menyimpannya ke Excel agar pengaturan 
+# "wrap text" dan "align center" bisa dilakukan secara otomatis.
+
+print(df)
+
+# Opsional: Simpan ke file Excel agar bisa diatur formatnya secara otomatis
+# Anda memerlukan pustaka 'openpyxl' (pip install openpyxl)
+try:
+    with pd.ExcelWriter('Daftar_Alat_Lab.xlsx', engine='openpyxl') as writer:
+        df.to_excel(writer, index=False, sheet_name='AlatLab')
+        
+        # Mengatur format di Excel
+        workbook = writer.book
+        worksheet = writer.sheets['AlatLab']
+        
+        # Membuat semua teks di tengah (alignment) dan wrap text
+        from openpyxl.styles import Alignment
+        for row in worksheet.iter_rows(min_row=1, max_row=len(df)+1, min_col=1, max_col=3):
+            for cell in row:
+                cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
+        
+        # Menyesuaikan lebar kolom agar tidak terpotong
+        worksheet.column_dimensions['A'].width = 15
+        worksheet.column_dimensions['B'].width = 20
+        worksheet.column_dimensions['C'].width = 50
+        
+    print("\nFile 'Daftar_Alat_Lab.xlsx' berhasil dibuat dengan format rapi.")
+except Exception as e:
+    print(f"\nGagal membuat file Excel: {e}")
         for a in alat_data
     ])
     st.dataframe(df, use_container_width=True, hide_index=True)
 
+# =========================
+# ── INSTRUMEN LABORATORIUM──
+# =========================
+if menu == "🏠 Beranda":
+
+    st.markdown("""
+    <div style='text-align:center;padding:40px 0 20px'>
+        <div style='display:inline-block;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);
+             border-radius:999px;padding:6px 18px;font-size:12px;color:#60a5fa;
+             letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:20px'>
+            🔬 Panduan Untuk Pemula
+        </div>
+        <h1 style='font-size:clamp(28px,5vw,52px);line-height:1.2;margin-bottom:16px'>
+            Kenali Alat<br>
+            <span style='background:linear-gradient(135deg,#3b82f6,#8b5cf6,#06b6d4);
+                  -webkit-background-clip:text;-webkit-text-fill-color:transparent'>
+                Laboratorium Kimia
+            </span>
+        </h1>
+        <p style='color:#94a3b8;font-size:17px;max-width:500px;margin:0 auto 30px;line-height:1.7'>
+            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Statistik
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("🧪 Total Alat", "15")
+    c2.metric("📁 Kategori", "5")
+    c3.metric("📝 Soal Kuis", "5")
+    c4.metric("📸 Foto Alat", "15")
+
+    st.markdown("---")
+
+    # Gambar hero
+    st.image(
+        "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80",
+        use_container_width=True,
+        caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
+    )
+    st.markdown("<p class='teks-kustom'>Tips: Klik menu Alat Laboratorium di sidebar untuk melihat foto dan penjelasan detail setiap alat atau langsung kuis untuk uji pemahamanmu</p>", unsafe_allow_html=True)
+    
+    st.markdown("---")
+    st.markdown("### ⚡ Preview Alat")
+
+    # 3 alat pertama sebagai preview
+    cols = st.columns(3)
+    for i, alat in enumerate(alat_data[:3]):
+        with cols[i]:
+            st.markdown(f"""
+            <div class='card-alat'>
+                <h3 style='margin-bottom:6px;font-size:18px'>{alat['nama']}</h3>
+                <span class='badge'>{alat['kategori']}</span>
+                <p style='color:#94a3b8;font-size:13px;margin-top:10px;line-height:1.5'>{alat['fungsi']}</p>
+            </div>
+            """, unsafe_allow_html=True)
+            
 # =========================
 # ── PANDUAN KESELAMATAN ──
 # =========================
