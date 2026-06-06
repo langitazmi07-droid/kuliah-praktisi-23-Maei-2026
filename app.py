@@ -636,6 +636,7 @@ try:
 except Exception as e:
     print(f"\nGagal membuat file Excel: {e}")
         for a in alat_data
+})
     st.dataframe(df, use_container_width=True, hide_index=True)
 
 # =========================
