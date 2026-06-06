@@ -788,10 +788,6 @@ with st.sidebar:
     st.session_state.current_menu = menu
     
 # =========================
-# ── BERANDA ──
-# =========================
-
-# =========================
 # ── INSTRUMEN LABORATORIUM──
 # =========================
 # FUNGSI RENDER HALAMAN
@@ -831,6 +827,14 @@ def render_instrumen_analitik(foto_map: dict = None):
         st.metric("Kromatografi", sum(1 for i in instrumen_data if i["kategori"] == "Kromatografi"))
  
     st.markdown("---")
+
+    st.markdown("""
+    <div style='text-align:center; color:#64748b; font-size:13px; 
+         margin-top:40px; padding:16px;
+         border-top:1px solid rgba(255,255,255,0.06)'>
+        🔬 Instrumen Analitik Laboratorium Kimia • Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
+    </div>
+    """, unsafe_allow_html=True)
  
     # ── Filter ───────────────────────────────────────────────
     semua_kategori = ["Semua"] + sorted({i["kategori"] for i in instrumen_data})
@@ -912,7 +916,9 @@ def render_instrumen_analitik(foto_map: dict = None):
  
         st.markdown("")  # spasi antar instrumen
 
-
+# =========================
+# ── BERANDA ──
+# =========================
 if menu == "🏠 Beranda":
 
     st.markdown("""
@@ -937,8 +943,8 @@ if menu == "🏠 Beranda":
 
     # Statistik
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("🧪 Total Alat", "15")
-    c2.metric("📁 Kategori", "5")
+    c1.metric("🧪 Total Alat & Instrumen", "26")
+    c2.metric("📁 Total Kategori", "10")
     c3.metric("📝 Soal Kuis", "5")
     c4.metric("📸 Foto Alat", "15")
 
