@@ -403,6 +403,26 @@ h3 { font-family: 'Syne', sans-serif !important; font-weight: 700 !important; co
 
 /* Radio */
 .stRadio label { color: #e2e8f0 !important; }
+[data-testid="stSidebar"] [role="radiogroup"] {
+    gap: 15px;
+    }
+
+[data-testid="stSidebar"] label {
+    font-size: 18px !important;      /* Perbesar font */
+    padding: 15px 20px !important;   /* Perbesar area klik (padding) */
+    background: rgba(255, 255, 255, 0.05); /* Latar belakang tombol */
+    border-radius: 12px !important;  /* Sudut membulat */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+[data-testid="stSidebar"] [role="radio"] {
+    transform: scale(1.2); 
+}
+
+[data-testid="stSidebar"] label:hover {
+    background: rgba(59, 130, 246, 0.2) !important;
+}
 
 /* Expander */
 .streamlit-expanderHeader {
