@@ -292,6 +292,7 @@ soal_kuis = [
 # =========================
 st.markdown("""
 <style>
+
 .teks-kustom {
     color: #fcd34d !important; /* Warna kuning emas */
     font-weight: bold;
@@ -443,7 +444,10 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
     transform: scale(10); 
     margin-left: 4px;      
 }
-    
+
+#MEMPERBESAR FONT SIDEBAR
+[data-testid="stSidebarNav"] {
+    font-size: 20px !important
 </style>
 """, unsafe_allow_html=True)
 
