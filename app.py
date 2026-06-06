@@ -860,7 +860,7 @@ def render_instrumen_analitik(foto_map: dict = None):
             # Kolom foto
             with col_foto:
                 st.markdown(f"""
-                <div style="
+                    <div style="
                     background: rgba(255,255,255,0.04);
                     border: 1px solid rgba(255,255,255,0.08);
                     border-radius: 16px;
