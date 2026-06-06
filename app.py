@@ -633,8 +633,8 @@ elif menu == "🔬 Alat Laboratorium":
 # =========================
 # ── INSTRUMEN LABORATORIUM──
 # =========================
-    elif st.session_state.current_menu == "🔬 Instrumen Analitik":
-        render_instrumen_analitik()
+    elif menu == "🔬 Instrumen Analitik":
+        st.title("🔬 Alat Laboratorium Kimia")
     
 # =========================
 # ── PANDUAN KESELAMATAN ──
