@@ -443,7 +443,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 }
 # Memperbesar ikon toggle sidebar saja
 [data-testid="stSidebarCollapseControl"] button {
-    transform: scale(5); 
+    transform: scale(10); 
     margin-left: 4px;      
 }
     
