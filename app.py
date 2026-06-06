@@ -546,7 +546,7 @@ instrumen_data = [
         "nama_lengkap": "Turbidimeter",
         "emoji": "💧",
         "kategori": "Analisis Air",
-        "foto": "Turbidimeter.jpeg",
+        "foto": "turbidimeter.jpeg",
         "penjelasan": (
             "Turbidimeter digunakan untuk mengukur tingkat kekeruhan suatu sampel air."
         ),
