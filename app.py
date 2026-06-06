@@ -788,10 +788,6 @@ with st.sidebar:
     st.session_state.current_menu = menu
     
 # =========================
-# ── BERANDA ──
-# =========================
-
-# =========================
 # ── INSTRUMEN LABORATORIUM──
 # =========================
 # FUNGSI RENDER HALAMAN
@@ -846,8 +842,7 @@ def render_instrumen_analitik(foto_map: dict = None):
                 unsafe_allow_html=True)
 
     st.markdown("""
-        🔬 Instrumen Analitik Laboratorium Kimia • Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
-    """, unsafe_allow_html=True)
+    <div class='card-alat'>
  
     # ── Daftar Instrumen ─────────────────────────────────────
     for instrumen in tampil:
