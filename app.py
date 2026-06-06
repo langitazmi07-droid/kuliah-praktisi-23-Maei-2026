@@ -842,7 +842,10 @@ def render_instrumen_analitik(foto_map: dict = None):
                 unsafe_allow_html=True)
 
     st.markdown("""
-    <div class='card-alat'>
+    <div class="footer">
+        🧪 Instrumen Analitik Laboratorium Kimia -- Selalu ikuti prosedur keselamatan saat mengoperasikab instrumen
+    </<div>
+        
  
     # ── Daftar Instrumen ─────────────────────────────────────
     for instrumen in tampil:
