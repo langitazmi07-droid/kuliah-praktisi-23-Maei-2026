@@ -443,21 +443,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 [data-testid="stSidebarCollapseControl"] button {
     transform: scale(10); 
     margin-left: 4px;      
-}
-
-#MEMPERBESAR FONT SIDEBAR
-[data-testid="stSidebarNav"] {
-    font-size: 200px !important;
-    }
-
-[data-testid="stSidebarNav"] li {
-    padding: 200px 0px
-    }
-
-[data-testid="stSidebarNav"] span {
-    font-size: 30px !important;
-    }
-    
+}    
 </style>
 """, unsafe_allow_html=True)
 
