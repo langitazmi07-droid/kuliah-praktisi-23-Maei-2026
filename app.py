@@ -21,7 +21,7 @@ alat_data = [
         "foto": "gelas ukur.jpg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Beaker glass (atau gelas kimia/gelas piala) adalah wadah silindris dengan dasar datar"
+            "Gelas beaker adalah wadah silindris dengan dasar datar"
             "dan bibir tuang yang umum digunakan di laboratorium untuk menampung, mencampur, mengaduk, dan memanaskan cairan/larutan."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
@@ -164,9 +164,9 @@ alat_data = [
     {
         "id": 10,
         "nama": "Kaca Arloji",
-        "emoji": "🥛",
+        "emoji": "🧫",
         "kategori": "Wadah",
-        "foto": "gelas ukur.jpg",
+        "foto": "kaca arloji.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -182,7 +182,7 @@ alat_data = [
         "nama": "Cawan Porselen",
         "emoji": "🥛",
         "kategori": "Wadah",
-        "foto": "porselen",
+        "foto": "porselen.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -196,9 +196,9 @@ alat_data = [
     {
         "id": 12,
         "nama": "Segitiga Pembakar",
-        "emoji": "🥛",
+        "emoji": "🔥",
         "kategori": "Penyangga",
-        "foto": "segitiga",
+        "foto": "segitiga.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -214,7 +214,7 @@ alat_data = [
         "nama": "Desikator",
         "emoji": "🥛",
         "kategori": "Wadah",
-        "foto": "desikator",
+        "foto": "desikator.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -230,7 +230,7 @@ alat_data = [
         "nama": "Pipet Mohr",
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
-        "foto": "pipet mohr",
+        "foto": "pipet mohr.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -246,7 +246,7 @@ alat_data = [
         "nama": "Pipet Volumetri",
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
-        "foto": "pipet volumetri",
+        "foto": "pipet volumetri.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
