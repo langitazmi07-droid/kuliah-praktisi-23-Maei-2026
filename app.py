@@ -447,7 +447,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 
 #MEMPERBESAR FONT SIDEBAR
 [data-testid="stSidebarNav"] {
-    font-size: 20px !important
+    font-size: 200px !important
 </style>
 """, unsafe_allow_html=True)
 
