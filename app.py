@@ -761,7 +761,6 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 # =========================
 with st.sidebar:
     st.markdown("## ⚗️ PENGENALAN ALAT LABORATORIUM")
-    from instrumen_analitik import render_instrumen_analitik, instrumen_data
 
     # 1. INISIALISASI SESSION STATE
     if 'current_menu' not in st.session_state:
@@ -791,130 +790,6 @@ with st.sidebar:
 # =========================
 # ── BERANDA ──
 # =========================
-if menu == "🏠 Beranda":
-
-    st.markdown("""
-    <div style='text-align:center;padding:40px 0 20px'>
-        <div style='display:inline-block;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);
-             border-radius:999px;padding:6px 18px;font-size:12px;color:#60a5fa;
-             letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:20px'>
-            🔬 Panduan Untuk Pemula
-        </div>
-        <h1 style='font-size:clamp(28px,5vw,52px);line-height:1.2;margin-bottom:16px'>
-            Kenali Alat<br>
-            <span style='background:linear-gradient(135deg,#3b82f6,#8b5cf6,#06b6d4);
-                  -webkit-background-clip:text;-webkit-text-fill-color:transparent'>
-                Laboratorium Kimia
-            </span>
-        </h1>
-        <p style='color:#94a3b8;font-size:17px;max-width:500px;margin:0 auto 30px;line-height:1.7'>
-            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    # Statistik
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("🧪 Total Alat", "15")
-    c2.metric("📁 Kategori", "5")
-    c3.metric("📝 Soal Kuis", "5")
-    c4.metric("📸 Foto Alat", "15")
-
-    st.markdown("---")
-
-    # Gambar hero
-    st.image(
-        "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80",
-        use_container_width=True,
-        caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
-    )
-    st.markdown("<p class='teks-kustom'>Tips: Klik menu Alat Laboratorium di sidebar untuk melihat foto dan penjelasan detail setiap alat atau langsung kuis untuk uji pemahamanmu</p>", unsafe_allow_html=True)
-    
-    st.markdown("---")
-    st.markdown("### ⚡ Preview Alat")
-
-    # 3 alat pertama sebagai preview
-    cols = st.columns(3)
-    for i, alat in enumerate(alat_data[:3]):
-        with cols[i]:
-            st.markdown(f"""
-            <div class='card-alat'>
-                <h3 style='margin-bottom:6px;font-size:18px'>{alat['nama']}</h3>
-                <span class='badge'>{alat['kategori']}</span>
-                <p style='color:#94a3b8;font-size:13px;margin-top:10px;line-height:1.5'>{alat['fungsi']}</p>
-            </div>
-            """, unsafe_allow_html=True)
-            
-# =========================
-# ── ALAT LABORATORIUM ──
-# =========================
-elif menu == "🔬 Alat Laboratorium":
-
-    st.title("🔬 Alat Laboratorium Kimia")
-    st.markdown("<p style='color:#64748b;margin-bottom:24px'>Klik ekspander setiap alat untuk melihat foto, fungsi, dan cara penggunaan lengkap.</p>", unsafe_allow_html=True)
-
-    # Filter kategori
-    semua_kategori = ["Semua"] + sorted(set(a["kategori"] for a in alat_data))
-    filter_kat = st.selectbox("🗂️ Filter Kategori", semua_kategori)
-
-    alat_tampil = alat_data if filter_kat == "Semua" else [a for a in alat_data if a["kategori"] == filter_kat]
-
-    st.markdown(f"<p style='color:#64748b;font-size:13px;margin-bottom:16px'>Menampilkan {len(alat_tampil)} alat</p>", unsafe_allow_html=True)
-
-    for alat in alat_tampil:
-        with st.expander(f"{alat['emoji']}  **{alat['nama']}** — *{alat['kategori']}*"):
-
-            col_foto, col_info = st.columns([1, 1.4])
-
-            with col_foto:
-                st.image(alat["foto"], use_container_width=True, caption=alat["nama"])
-                st.markdown(f"""
-                <div style='display:flex;gap:8px;flex-wrap:wrap;margin-top:10px'>
-                    <span class='badge' style='background:rgba(255,255,255,0.06);color:#94a3b8;border-color:rgba(255,255,255,0.1)'>
-                        📏 {alat['ukuran']}
-                    </span>
-                    <span class='badge'>{alat['kategori']}</span>
-                </div>
-                """, unsafe_allow_html=True)
-
-            with col_info:
-                st.markdown(f"""
-                <div class='info-box box-fungsi'>
-                    <div class='label-kecil' style='color:#3b82f6'>Fungsi Utama</div>
-                    <div style='color:#e2e8f0;line-height:1.6'>{alat['fungsi']}</div>
-                </div>
-
-                <div class='info-box box-awam'>
-                    <div class='label-kecil' style='color:#10b981'>💡 Penjelasan Sederhana</div>
-                    <div style='color:#e2e8f0;line-height:1.6'>{alat['penjelasan_awam']}</div>
-                </div>
-
-                <div class='info-box box-cara'>
-                    <div class='label-kecil' style='color:#3b82f6'>📋 Cara Penggunaan</div>
-                    <div style='color:#e2e8f0;line-height:1.6'>{alat['cara_guna']}</div>
-                </div>
-
-                <div class='info-box box-bahaya'>
-                    <div class='label-kecil' style='color:#ef4444'>Perhatian & Bahaya</div>
-                    <div style='color:#fca5a5;line-height:1.6'>{alat['bahaya']}</div>
-                </div>
-                """, unsafe_allow_html=True)
-
-    st.markdown("---")
-
-    # Tabel ringkasan
-    st.markdown("### 📊 Ringkasan Semua Alat")
-    import pandas as pd
-    df = pd.DataFrame([
-        {
-            "Alat": f"{a['emoji']} {a['nama']}",
-            "Kategori": a["kategori"],
-            "Fungsi": a["fungsi"],
-            "Ukuran": a["ukuran"],
-        }
-        for a in alat_data
-    ])
-    st.dataframe(df, use_container_width=True, hide_index=True)
 
 # =========================
 # ── INSTRUMEN LABORATORIUM──
@@ -1066,31 +941,138 @@ def render_instrumen_analitik(foto_map: dict = None):
     """, unsafe_allow_html=True)
  
  
-# =========================
-# STANDALONE MODE
-# =========================
-if __name__ == "__main__":
-    st.set_page_config(
-        page_title="Instrumen Analitik",
-        page_icon="🔬",
-        layout="wide",
-    )
-    # CSS minimal agar bisa berjalan standalone
+
+if menu == "🏠 Beranda":
+
     st.markdown("""
-    <style>
-    .stApp { background: linear-gradient(135deg, #0a0f1e, #0f172a); color: #e2e8f0; }
-    .info-box { border-radius: 12px; padding: 14px 18px; margin-bottom: 12px; }
-    .box-fungsi { background: rgba(255,255,255,0.04); border-left: 3px solid #3b82f6; }
-    .box-awam  { background: rgba(16,185,129,0.08); border-left: 3px solid #10b981; }
-    .box-cara  { background: rgba(59,130,246,0.08); border-left: 3px solid #3b82f6; }
-    .box-bahaya{ background: rgba(239,68,68,0.08); border-left: 3px solid #ef4444; }
-    .label-kecil { font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
-    .footer { text-align:center; padding:24px; color:#334155; font-size:13px; border-top:1px solid rgba(255,255,255,0.06); margin-top:40px; }
-    [data-testid="metric-container"] { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:16px; }
-    </style>
+    <div style='text-align:center;padding:40px 0 20px'>
+        <div style='display:inline-block;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);
+             border-radius:999px;padding:6px 18px;font-size:12px;color:#60a5fa;
+             letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:20px'>
+            🔬 Panduan Untuk Pemula
+        </div>
+        <h1 style='font-size:clamp(28px,5vw,52px);line-height:1.2;margin-bottom:16px'>
+            Kenali Alat<br>
+            <span style='background:linear-gradient(135deg,#3b82f6,#8b5cf6,#06b6d4);
+                  -webkit-background-clip:text;-webkit-text-fill-color:transparent'>
+                Laboratorium Kimia
+            </span>
+        </h1>
+        <p style='color:#94a3b8;font-size:17px;max-width:500px;margin:0 auto 30px;line-height:1.7'>
+            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan
+        </p>
+    </div>
     """, unsafe_allow_html=True)
-    render_instrumen_analitik()
+
+    # Statistik
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("🧪 Total Alat", "15")
+    c2.metric("📁 Kategori", "5")
+    c3.metric("📝 Soal Kuis", "5")
+    c4.metric("📸 Foto Alat", "15")
+
+    st.markdown("---")
+
+    # Gambar hero
+    st.image(
+        "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80",
+        use_container_width=True,
+        caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
+    )
+    st.markdown("<p class='teks-kustom'>Tips: Klik menu Alat Laboratorium di sidebar untuk melihat foto dan penjelasan detail setiap alat atau langsung kuis untuk uji pemahamanmu</p>", unsafe_allow_html=True)
     
+    st.markdown("---")
+    st.markdown("### ⚡ Preview Alat")
+
+    # 3 alat pertama sebagai preview
+    cols = st.columns(3)
+    for i, alat in enumerate(alat_data[:3]):
+        with cols[i]:
+            st.markdown(f"""
+            <div class='card-alat'>
+                <h3 style='margin-bottom:6px;font-size:18px'>{alat['nama']}</h3>
+                <span class='badge'>{alat['kategori']}</span>
+                <p style='color:#94a3b8;font-size:13px;margin-top:10px;line-height:1.5'>{alat['fungsi']}</p>
+            </div>
+            """, unsafe_allow_html=True)
+            
+# =========================
+# ── ALAT LABORATORIUM ──
+# =========================
+elif menu == "🔬 Alat Laboratorium":
+
+    st.title("🔬 Alat Laboratorium Kimia")
+    st.markdown("<p style='color:#64748b;margin-bottom:24px'>Klik ekspander setiap alat untuk melihat foto, fungsi, dan cara penggunaan lengkap.</p>", unsafe_allow_html=True)
+
+    # Filter kategori
+    semua_kategori = ["Semua"] + sorted(set(a["kategori"] for a in alat_data))
+    filter_kat = st.selectbox("🗂️ Filter Kategori", semua_kategori)
+
+    alat_tampil = alat_data if filter_kat == "Semua" else [a for a in alat_data if a["kategori"] == filter_kat]
+
+    st.markdown(f"<p style='color:#64748b;font-size:13px;margin-bottom:16px'>Menampilkan {len(alat_tampil)} alat</p>", unsafe_allow_html=True)
+
+    for alat in alat_tampil:
+        with st.expander(f"{alat['emoji']}  **{alat['nama']}** — *{alat['kategori']}*"):
+
+            col_foto, col_info = st.columns([1, 1.4])
+
+            with col_foto:
+                st.image(alat["foto"], use_container_width=True, caption=alat["nama"])
+                st.markdown(f"""
+                <div style='display:flex;gap:8px;flex-wrap:wrap;margin-top:10px'>
+                    <span class='badge' style='background:rgba(255,255,255,0.06);color:#94a3b8;border-color:rgba(255,255,255,0.1)'>
+                        📏 {alat['ukuran']}
+                    </span>
+                    <span class='badge'>{alat['kategori']}</span>
+                </div>
+                """, unsafe_allow_html=True)
+
+            with col_info:
+                st.markdown(f"""
+                <div class='info-box box-fungsi'>
+                    <div class='label-kecil' style='color:#3b82f6'>Fungsi Utama</div>
+                    <div style='color:#e2e8f0;line-height:1.6'>{alat['fungsi']}</div>
+                </div>
+
+                <div class='info-box box-awam'>
+                    <div class='label-kecil' style='color:#10b981'>💡 Penjelasan Sederhana</div>
+                    <div style='color:#e2e8f0;line-height:1.6'>{alat['penjelasan_awam']}</div>
+                </div>
+
+                <div class='info-box box-cara'>
+                    <div class='label-kecil' style='color:#3b82f6'>📋 Cara Penggunaan</div>
+                    <div style='color:#e2e8f0;line-height:1.6'>{alat['cara_guna']}</div>
+                </div>
+
+                <div class='info-box box-bahaya'>
+                    <div class='label-kecil' style='color:#ef4444'>Perhatian & Bahaya</div>
+                    <div style='color:#fca5a5;line-height:1.6'>{alat['bahaya']}</div>
+                </div>
+                """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # Tabel ringkasan
+    st.markdown("### 📊 Ringkasan Semua Alat")
+    import pandas as pd
+    df = pd.DataFrame([
+        {
+            "Alat": f"{a['emoji']} {a['nama']}",
+            "Kategori": a["kategori"],
+            "Fungsi": a["fungsi"],
+            "Ukuran": a["ukuran"],
+        }
+        for a in alat_data
+    ])
+    st.dataframe(df, use_container_width=True, hide_index=True)
+
+# =========================
+# ── INSTRUMEN ANALITIK ──
+# =========================
+elif menu == "🧪 Instrumen Analitik":
+    render_instrumen_analitik()
+
 # =========================
 # ── PANDUAN KESELAMATAN ──
 # =========================
