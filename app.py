@@ -463,6 +463,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 [data-testid="stSidebarCollapseControl"] button {
     transform: scale(100); 
     margin-left: 4px;      
+    font-weight: bold;
 }    
 
 #MEMPERBESAR FONT SIDEBAR
