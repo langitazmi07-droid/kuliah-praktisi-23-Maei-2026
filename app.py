@@ -596,12 +596,12 @@ elif menu == "🔬 Alat Laboratorium":
     st.markdown("### 📊 Ringkasan Semua Alat")
     import pandas as pd
     df = pd.DataFrame([
-        {
+        [{
             "Alat": f"{a['emoji']} {a['nama']}",
             "Kategori": a["kategori"],
             "Fungsi": a["fungsi"],
             "Ukuran": a["ukuran"],
-        }
+        }]
 
 # 3. Menampilkan tabel
 # Dalam terminal, ini akan terlihat rapi dengan rata kiri.
