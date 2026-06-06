@@ -470,6 +470,9 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
     transform: scale(100); 
     margin-left: 4px;      
 }    
+[data-testid="stSidebarCollapseControl"] svg {
+    stroke-width: 2.5px !important; /* Mengatur ketebalan garis ikon */
+}
 
 #MEMPERBESAR FONT SIDEBAR
 [data-testid="stSidebarNav"] {
