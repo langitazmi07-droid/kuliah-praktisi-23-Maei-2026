@@ -603,7 +603,7 @@ elif menu == "🔬 Alat Laboratorium":
             "Ukuran": a["ukuran"],
         }
         for a in alat_data
-})
+    ])
     st.dataframe(df, use_container_width=True, hide_index=True)
 
 # =========================
