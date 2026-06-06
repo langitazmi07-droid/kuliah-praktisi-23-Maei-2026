@@ -266,7 +266,7 @@ instrumen_data = [
         "nama_lengkap": "Atomic Absorption Spectrophotometer",
         "emoji": "🔬",
         "kategori": "Analisis Logam",
-        "foto": "aas.jpeg",
+        "foto": "aas.jpg",
         "penjelasan": (
             "AAS adalah instrumen yang digunakan untuk menentukan konsentrasi logam dalam sampel "
             "berdasarkan penyerapan cahaya oleh atom bebas pada panjang gelombang tertentu."
@@ -303,7 +303,7 @@ instrumen_data = [
         "nama_lengkap": "High Performance Liquid Chromatography",
         "emoji": "💉",
         "kategori": "Kromatografi",
-        "foto": "hplc.jpeg",
+        "foto": "hplc.jpg",
         "penjelasan": (
             "HPLC adalah instrumen analisis yang digunakan untuk memisahkan, mengidentifikasi, dan menentukan "
             "kadar senyawa dalam suatu sampel cair. Pemisahan terjadi berdasarkan perbedaan interaksi senyawa "
@@ -341,7 +341,7 @@ instrumen_data = [
         "nama_lengkap": "Gas Chromatography",
         "emoji": "🌡️",
         "kategori": "Kromatografi",
-        "foto": "gc.jpeg",
+        "foto": "gc.jpg",
         "penjelasan": (
             "GC adalah instrumen yang digunakan untuk memisahkan dan menganalisis senyawa yang mudah menguap "
             "(volatile) dan stabil terhadap panas."
@@ -379,7 +379,7 @@ instrumen_data = [
         "nama_lengkap": "UV-Vis Spectrophotometer",
         "emoji": "💡",
         "kategori": "Spektroskopi",
-        "foto": "uvvis.jpeg",
+        "foto": "uvvis.jpg",
         "penjelasan": (
             "Spektrofotometer UV-Vis adalah instrumen yang digunakan untuk mengukur absorbansi atau "
             "transmitansi cahaya ultraviolet (UV) dan cahaya tampak (Visible) oleh suatu larutan."
@@ -413,7 +413,7 @@ instrumen_data = [
         "nama_lengkap": "pH Meter",
         "emoji": "🧪",
         "kategori": "Pengukuran Kimia",
-        "foto": "ph_meter.jpeg",
+        "foto": "ph_meter.jpg",
         "penjelasan": (
             "pH meter adalah alat yang digunakan untuk mengukur tingkat keasaman atau kebasaan suatu larutan "
             "secara elektrokimia menggunakan elektroda kaca."
@@ -449,7 +449,7 @@ instrumen_data = [
         "nama_lengkap": "Fourier Transform Infrared Spectroscopy",
         "emoji": "📡",
         "kategori": "Spektroskopi",
-        "foto": "ftir.jpeg",
+        "foto": "ftir.jpg",
         "penjelasan": (
             "FTIR digunakan untuk mengidentifikasi gugus fungsi dan struktur senyawa berdasarkan penyerapan "
             "radiasi inframerah oleh ikatan kimia dalam molekul."
@@ -482,7 +482,7 @@ instrumen_data = [
         "nama_lengkap": "Inductively Coupled Plasma Optical Emission Spectroscopy",
         "emoji": "⚡",
         "kategori": "Analisis Logam",
-        "foto": "OCP-OES.jpeg",
+        "foto": "icp.jpg",
         "penjelasan": (
             "ICP-OES digunakan untuk menentukan kadar unsur logam dengan mengukur cahaya yang dipancarkan "
             "atom atau ion dalam plasma bersuhu sangat tinggi."
@@ -516,7 +516,7 @@ instrumen_data = [
         "nama_lengkap": "Total Organic Carbon Analyzer",
         "emoji": "💧",
         "kategori": "Analisis Air",
-        "foto": "toc.jpeg",
+        "foto": "toc.jpg",
         "penjelasan": (
             "TOC Analyzer digunakan untuk menentukan jumlah karbon organik total dalam air atau sampel "
             "cair lainnya, penting untuk analisis kualitas air."
@@ -786,7 +786,7 @@ with st.sidebar:
 
     # 5. UPDATE STATE
     st.session_state.current_menu = menu
-    
+
 # =========================
 # ── INSTRUMEN LABORATORIUM──
 # =========================
@@ -807,7 +807,7 @@ def render_instrumen_analitik(foto_map: dict = None):
         margin-bottom: 32px;
         text-align: center;
     ">
-        <h1 style="font-size:2.2rem; margin:0 0 10px 0;">🧪 Instrumen Analitik Laboratorium</h1>
+        <h1 style="font-size:2.2rem; margin:0 0 10px 0;">🔬 Instrumen Analitik Laboratorium</h1>
         <p style="color:#94a3b8; font-size:1.05rem; margin:0;">
             Peralatan canggih untuk analisis kimia tingkat lanjut
         </p>
@@ -825,14 +825,8 @@ def render_instrumen_analitik(foto_map: dict = None):
         st.metric("Spektroskopi", sum(1 for i in instrumen_data if i["kategori"] == "Spektroskopi"))
     with col4:
         st.metric("Kromatografi", sum(1 for i in instrumen_data if i["kategori"] == "Kromatografi"))
-
-    st.markdown("""
-    <div style='text-align:center; color:#64748b; font-size:13px; 
-         margin-top:40px; padding:16px;
-         border-top:1px solid rgba(255,255,255,0.06)'>
-         🧪 Instrumen Analitik Laboratorium Kimia - Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
-    </div>
-    """, unsafe_allow_html=True)
+ 
+    st.markdown("---")
  
     # ── Filter ───────────────────────────────────────────────
     semua_kategori = ["Semua"] + sorted({i["kategori"] for i in instrumen_data})
@@ -860,7 +854,7 @@ def render_instrumen_analitik(foto_map: dict = None):
             # Kolom foto
             with col_foto:
                 st.markdown(f"""
-                    <div style="
+                <div style="
                     background: rgba(255,255,255,0.04);
                     border: 1px solid rgba(255,255,255,0.08);
                     border-radius: 16px;
@@ -883,7 +877,11 @@ def render_instrumen_analitik(foto_map: dict = None):
                 """, unsafe_allow_html=True)
  
                 # Tampilkan foto jika tersedia
-                if foto_map and instrumen["foto"] in foto_map:
+                try:
+                    st.image(instrumen["foto"], use_container_width=True)
+                except Exception:
+                    st.markdown("<p style='color:#64748b;text-align:center;font-size:12px'>📷 Foto tidak tersedia</p>", unsafe_allow_html=True)
+                if False and foto_map and instrumen["foto"] in foto_map:
                     st.image(foto_map[instrumen["foto"]], use_container_width=True)
  
             # Kolom informasi
@@ -934,11 +932,10 @@ def render_instrumen_analitik(foto_map: dict = None):
                 """, unsafe_allow_html=True)
  
         st.markdown("")  # spasi antar instrumen
- 
-    # ── Footer ────────────────────────────────────────────────
- 
- 
 
+# =========================
+# ── BERANDA ──
+# =========================
 if menu == "🏠 Beranda":
 
     st.markdown("""
