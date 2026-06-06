@@ -257,6 +257,292 @@ alat_data = [
 ]
 
 # =========================
+# DATA INSTRUMEN ANALITIK
+# =========================
+instrumen_data = [
+    {
+        "id": 1,
+        "nama": "AAS",
+        "nama_lengkap": "Atomic Absorption Spectrophotometer",
+        "emoji": "🔬",
+        "kategori": "Analisis Logam",
+        "foto": "aas.jpg",
+        "penjelasan": (
+            "AAS adalah instrumen yang digunakan untuk menentukan konsentrasi logam dalam sampel "
+            "berdasarkan penyerapan cahaya oleh atom bebas pada panjang gelombang tertentu."
+        ),
+        "fungsi": [
+            "Analisis logam berat dalam air, tanah, dan limbah.",
+            "Analisis kandungan mineral dalam makanan.",
+            "Analisis logam pada sampel farmasi.",
+            "Pengujian kualitas lingkungan.",
+        ],
+        "cara_kerja": [
+            "Menyiapkan sampel yang telah didestruksi atau dilarutkan.",
+            "Menyalakan instrumen dan lampu katoda berongga (Hollow Cathode Lamp) sesuai unsur yang dianalisis.",
+            "Mengatur panjang gelombang yang sesuai.",
+            "Mengalirkan gas bahan bakar dan oksidator ke burner.",
+            "Menghisap sampel ke dalam nyala api menggunakan nebulizer.",
+            "Sampel berubah menjadi atom bebas di dalam nyala api.",
+            "Cahaya dari lampu katoda melewati awan atom tersebut.",
+            "Atom menyerap sebagian energi cahaya.",
+            "Detektor mengukur jumlah cahaya yang diserap.",
+            "Konsentrasi logam dihitung berdasarkan kurva kalibrasi.",
+        ],
+        "bahaya": [
+            "Menggunakan nyala api dari campuran gas asetilena dan udara/nitrous oxide — berpotensi kebakaran atau ledakan.",
+            "Tabung gas bertekanan tinggi dapat menimbulkan risiko jika terjadi kebocoran.",
+            "Radiasi ultraviolet dari lampu katoda berongga dapat berbahaya bagi mata jika terpapar langsung.",
+            "Sampel yang mengandung logam berat dapat bersifat toksik.",
+        ],
+        "warna_hex": "#ef4444",
+    },
+    {
+        "id": 2,
+        "nama": "HPLC",
+        "nama_lengkap": "High Performance Liquid Chromatography",
+        "emoji": "💉",
+        "kategori": "Kromatografi",
+        "foto": "hplc.jpg",
+        "penjelasan": (
+            "HPLC adalah instrumen analisis yang digunakan untuk memisahkan, mengidentifikasi, dan menentukan "
+            "kadar senyawa dalam suatu sampel cair. Pemisahan terjadi berdasarkan perbedaan interaksi senyawa "
+            "dengan fase diam (kolom) dan fase gerak (pelarut)."
+        ),
+        "fungsi": [
+            "Analisis kadar obat dan bahan farmasi.",
+            "Analisis bahan tambahan pangan.",
+            "Analisis senyawa organik dalam sampel lingkungan.",
+            "Uji kemurnian suatu senyawa.",
+            "Identifikasi komponen campuran yang kompleks.",
+        ],
+        "cara_kerja": [
+            "Menyiapkan fase gerak (mobile phase) sesuai metode analisis.",
+            "Menyalakan instrumen dan melakukan purging sistem.",
+            "Memasang kolom yang sesuai dengan jenis analisis.",
+            "Menginjeksikan sampel menggunakan injector atau autosampler.",
+            "Pompa mendorong fase gerak dan sampel melewati kolom dengan tekanan tinggi.",
+            "Komponen sampel terpisah berdasarkan interaksinya dengan fase diam dalam kolom.",
+            "Komponen yang keluar dari kolom dideteksi oleh detektor (UV-Vis, PDA, atau lainnya).",
+            "Data ditampilkan dalam bentuk kromatogram.",
+            "Luas area puncak digunakan untuk menentukan kadar senyawa.",
+        ],
+        "bahaya": [
+            "Tekanan operasi sangat tinggi (dapat mencapai ratusan bar) — kebocoran dapat menyebabkan cedera.",
+            "Pelarut organik seperti metanol, asetonitril, dan heksana bersifat mudah terbakar dan beracun.",
+            "Paparan uap pelarut dapat menyebabkan iritasi dan gangguan kesehatan.",
+            "Risiko pecahnya kolom atau sambungan jika pemasangan tidak benar.",
+        ],
+        "warna_hex": "#8b5cf6",
+    },
+    {
+        "id": 3,
+        "nama": "GC",
+        "nama_lengkap": "Gas Chromatography",
+        "emoji": "🌡️",
+        "kategori": "Kromatografi",
+        "foto": "gc.jpg",
+        "penjelasan": (
+            "GC adalah instrumen yang digunakan untuk memisahkan dan menganalisis senyawa yang mudah menguap "
+            "(volatile) dan stabil terhadap panas."
+        ),
+        "fungsi": [
+            "Analisis senyawa organik volatil.",
+            "Pengujian residu pestisida.",
+            "Analisis komponen minyak bumi.",
+            "Analisis alkohol dalam minuman.",
+            "Pengujian kualitas produk industri dan lingkungan.",
+        ],
+        "cara_kerja": [
+            "Menyiapkan sampel yang akan dianalisis.",
+            "Menyalakan instrumen dan mengatur suhu oven.",
+            "Mengalirkan gas pembawa (carrier gas) seperti helium atau nitrogen.",
+            "Menginjeksikan sampel ke injector.",
+            "Sampel diuapkan oleh suhu tinggi di injector.",
+            "Uap sampel terbawa oleh carrier gas menuju kolom.",
+            "Komponen sampel terpisah berdasarkan volatilitas dan interaksinya dengan fase diam.",
+            "Komponen keluar dari kolom dan masuk ke detektor.",
+            "Detektor menghasilkan sinyal yang ditampilkan sebagai kromatogram.",
+            "Luas area puncak digunakan untuk menentukan konsentrasi komponen.",
+        ],
+        "bahaya": [
+            "Suhu oven dan injektor sangat tinggi (dapat mencapai >300°C) — berisiko menyebabkan luka bakar.",
+            "Menggunakan gas bertekanan tinggi seperti helium, nitrogen, hidrogen, atau udara.",
+            "Gas hidrogen bersifat sangat mudah terbakar dan berpotensi menimbulkan ledakan.",
+            "Paparan pelarut organik dan sampel volatil dapat membahayakan kesehatan.",
+        ],
+        "warna_hex": "#06b6d4",
+    },
+    {
+        "id": 4,
+        "nama": "UV-Vis",
+        "nama_lengkap": "UV-Vis Spectrophotometer",
+        "emoji": "💡",
+        "kategori": "Spektroskopi",
+        "foto": "uvvis.jpg",
+        "penjelasan": (
+            "Spektrofotometer UV-Vis adalah instrumen yang digunakan untuk mengukur absorbansi atau "
+            "transmitansi cahaya ultraviolet (UV) dan cahaya tampak (Visible) oleh suatu larutan."
+        ),
+        "fungsi": [
+            "Menentukan konsentrasi suatu zat.",
+            "Analisis kadar senyawa dalam larutan.",
+            "Analisis kualitas air.",
+            "Penentuan kurva kalibrasi.",
+        ],
+        "cara_kerja": [
+            "Menyalakan instrumen dan melakukan pemanasan (warming up).",
+            "Menyiapkan blanko dan sampel.",
+            "Memasukkan blanko ke dalam ruang sampel dan melakukan zeroing.",
+            "Memasukkan sampel ke dalam kuvet.",
+            "Cahaya UV atau Visible dilewatkan melalui sampel.",
+            "Sebagian cahaya diserap oleh sampel.",
+            "Detektor mengukur intensitas cahaya yang diteruskan.",
+            "Hasil absorbansi ditampilkan pada layar.",
+        ],
+        "bahaya": [
+            "Paparan sinar UV dapat merusak mata — jangan menatap langsung ke sumber cahaya.",
+            "Pecahnya kuvet kaca dapat menyebabkan luka.",
+            "Paparan bahan kimia dari sampel yang dianalisis.",
+        ],
+        "warna_hex": "#f59e0b",
+    },
+    {
+        "id": 5,
+        "nama": "pH Meter",
+        "nama_lengkap": "pH Meter",
+        "emoji": "🧪",
+        "kategori": "Pengukuran Kimia",
+        "foto": "ph_meter.jpg",
+        "penjelasan": (
+            "pH meter adalah alat yang digunakan untuk mengukur tingkat keasaman atau kebasaan suatu larutan "
+            "secara elektrokimia menggunakan elektroda kaca."
+        ),
+        "fungsi": [
+            "Pengukuran pH air, limbah, dan larutan kimia.",
+            "Pengendalian kualitas produk makanan dan minuman.",
+            "Analisis laboratorium kimia dan biologi.",
+            "Monitoring proses industri.",
+        ],
+        "cara_kerja": [
+            "Menyalakan pH meter.",
+            "Melakukan kalibrasi menggunakan larutan buffer standar (pH 4, 7, dan 10).",
+            "Membilas elektroda dengan akuades.",
+            "Mengeringkan elektroda dengan tisu tanpa menggosok.",
+            "Mencelupkan elektroda ke dalam sampel.",
+            "Menunggu hingga pembacaan stabil.",
+            "Mencatat nilai pH yang ditampilkan.",
+            "Membilas elektroda setelah pengukuran.",
+            "Menyimpan elektroda dalam larutan penyimpanan yang sesuai.",
+        ],
+        "bahaya": [
+            "Elektroda kaca mudah pecah dan dapat melukai pengguna.",
+            "Larutan standar dan sampel yang diukur mungkin bersifat korosif (asam atau basa kuat).",
+            "Risiko sengatan listrik kecil jika alat atau kabel rusak.",
+            "Tumpahan bahan kimia saat pengukuran dapat menyebabkan iritasi kulit atau mata.",
+        ],
+        "warna_hex": "#10b981",
+    },
+    {
+        "id": 6,
+        "nama": "FTIR",
+        "nama_lengkap": "Fourier Transform Infrared Spectroscopy",
+        "emoji": "📡",
+        "kategori": "Spektroskopi",
+        "foto": "ftir.jpg",
+        "penjelasan": (
+            "FTIR digunakan untuk mengidentifikasi gugus fungsi dan struktur senyawa berdasarkan penyerapan "
+            "radiasi inframerah oleh ikatan kimia dalam molekul."
+        ),
+        "fungsi": [
+            "Identifikasi senyawa organik.",
+            "Analisis polimer.",
+            "Analisis bahan farmasi.",
+            "Identifikasi kontaminan.",
+        ],
+        "cara_kerja": [
+            "Menyalakan instrumen.",
+            "Menyiapkan sampel (padat, cair, atau gas).",
+            "Menempatkan sampel pada holder atau ATR (Attenuated Total Reflectance).",
+            "Sinar inframerah dilewatkan melalui sampel.",
+            "Sampel menyerap energi pada panjang gelombang tertentu.",
+            "Detektor merekam spektrum inframerah.",
+            "Spektrum dibandingkan dengan database untuk identifikasi.",
+        ],
+        "bahaya": [
+            "Risiko sengatan listrik dari instrumen jika ada kerusakan.",
+            "Bahaya bahan kimia pada sampel yang disiapkan.",
+            "Komponen optik dapat rusak jika terkena bahan korosif.",
+        ],
+        "warna_hex": "#3b82f6",
+    },
+    {
+        "id": 7,
+        "nama": "ICP-OES",
+        "nama_lengkap": "Inductively Coupled Plasma Optical Emission Spectroscopy",
+        "emoji": "⚡",
+        "kategori": "Analisis Logam",
+        "foto": "icp.jpg",
+        "penjelasan": (
+            "ICP-OES digunakan untuk menentukan kadar unsur logam dengan mengukur cahaya yang dipancarkan "
+            "atom atau ion dalam plasma bersuhu sangat tinggi."
+        ),
+        "fungsi": [
+            "Analisis logam berat.",
+            "Analisis unsur jejak (trace element).",
+            "Analisis lingkungan dan geologi.",
+        ],
+        "cara_kerja": [
+            "Menyiapkan larutan sampel.",
+            "Menyalakan sistem plasma.",
+            "Gas argon dialirkan ke plasma torch.",
+            "Sampel diubah menjadi aerosol melalui nebulizer.",
+            "Aerosol masuk ke plasma bersuhu sangat tinggi (±10.000 K).",
+            "Atom tereksitasi dan memancarkan cahaya.",
+            "Detektor mengukur intensitas cahaya pada panjang gelombang tertentu.",
+            "Konsentrasi unsur dihitung secara otomatis.",
+        ],
+        "bahaya": [
+            "Plasma bersuhu sangat tinggi (hingga ±10.000 K) — risiko luka bakar serius.",
+            "Tabung argon bertekanan tinggi dapat berbahaya jika bocor.",
+            "Tegangan listrik tinggi digunakan untuk membangkitkan plasma.",
+            "Paparan asam kuat dari proses preparasi sampel.",
+        ],
+        "warna_hex": "#f97316",
+    },
+    {
+        "id": 8,
+        "nama": "TOC Analyzer",
+        "nama_lengkap": "Total Organic Carbon Analyzer",
+        "emoji": "💧",
+        "kategori": "Analisis Air",
+        "foto": "toc.jpg",
+        "penjelasan": (
+            "TOC Analyzer digunakan untuk menentukan jumlah karbon organik total dalam air atau sampel "
+            "cair lainnya, penting untuk analisis kualitas air."
+        ),
+        "fungsi": [
+            "Analisis kualitas air.",
+            "Monitoring air proses industri.",
+            "Analisis air farmasi.",
+        ],
+        "cara_kerja": [
+            "Menyiapkan sampel cair.",
+            "Menghilangkan karbon anorganik dari sampel.",
+            "Sampel dioksidasi menjadi CO₂.",
+            "CO₂ yang terbentuk diukur menggunakan detektor.",
+            "Sistem menghitung kadar Total Organic Carbon secara otomatis.",
+        ],
+        "bahaya": [
+            "Paparan bahan oksidator kuat yang digunakan dalam proses.",
+            "Suhu tinggi pada reaktor oksidasi.",
+            "Risiko kontak dengan bahan kimia korosif.",
+        ],
+        "warna_hex": "#06b6d4",
+    },
+]
+ 
+# =========================
 # DATA KUIS
 # =========================
 soal_kuis = [
