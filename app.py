@@ -540,6 +540,95 @@ instrumen_data = [
         ],
         "warna_hex": "#06b6d4",
     },
+    {
+        "id": 9,
+        "nama": "Turbidimeter",
+        "nama_lengkap": "Turbidimeter",
+        "emoji": "⚡",
+        "kategori": "Analisis Logam",
+        "foto": "Turbidimeter",
+        "penjelasan": (
+            "Turbidimeter digunakan untuk mengukur tingkat kekeruhan suatu sampel air."
+        ),
+        "fungsi": [
+            "Pengujian kualitas air minum."
+            "AMonitoring limbah cair.",
+            "Analisis proses pengolahan air.",
+        ],
+        "cara_kerja": [
+            "Sampel dimasukkan ke dalam vial.",
+            "Vial ditempatkan pada ruang ukur.",
+            "Cahaya dipancarkan ke sampel.",
+            "Partikel dalam sampel menghamburkan cahaya.",
+            "Detektor mengukur intensitas hamburan cahaya.",
+            "Hasil ditampilkan dalam satuan NTU (Nephelometric Turbidity Unit.",
+        ],
+        "bahaya": [
+            "Pecahnya vial kaca.",
+            "Paparan sampel limbah yang berbahaya.",
+            "Kontaminasi silang antar sampel.",
+        ],
+        "warna_hex": "#f97316",
+    },
+            "id": 10,
+        "nama": "Conductivity Meter",
+        "nama_lengkap": "Conductivity Meter",
+        "emoji": "⚡",
+        "kategori": "Analisis Logam",
+        "foto": "Conductivity_meter.jpeg",
+        "penjelasan": (
+            "Conductivity Meter digunakan untuk mengukur kemampuan larutan menghantarkan arus listrik."
+        ),
+        "fungsi": [
+            "Analisis kualitas air.."
+            "Monitoring air demineralisasi.",
+            "Pengujian kemurnian air.",
+        ],
+        "cara_kerja": [
+            "Menyalakan alat dan melakukan kalibrasi.",
+            "Mencelupkan probe ke dalam sampel.",
+            "Elektroda mengalirkan arus listrik kecil.",
+            "Alat mengukur hambatan listrik larutan.",
+            "Nilai konduktivitas ditampilkan dalam satuan Siemens (S) per satuan jarak.",
+            "Hasil ditampilkan dalam satuan NTU (Nephelometric Turbidity Unit.",
+        ],
+        "bahaya": [
+            "Kerusakan probe akibat bahan korosif.",
+            "Risiko sengatan listrik kecil jika alat rusak.",
+            "Kontaminasi bahan kimia dari sampel.",
+        ],
+        "warna_hex": "#f97316",
+    },
+    {
+        "id": 9,
+        "nama": "Turbidimeter",
+        "nama_lengkap": "Turbidimeter",
+        "emoji": "⚡",
+        "kategori": "Analisis Logam",
+        "foto": "Turbidimeter",
+        "penjelasan": (
+            "Turbidimeter digunakan untuk mengukur tingkat kekeruhan suatu sampel air."
+        ),
+        "fungsi": [
+            "Pengujian kualitas air minum."
+            "AMonitoring limbah cair.",
+            "Analisis proses pengolahan air.",
+        ],
+        "cara_kerja": [
+            "Sampel dimasukkan ke dalam vial.",
+            "Vial ditempatkan pada ruang ukur.",
+            "Cahaya dipancarkan ke sampel.",
+            "Partikel dalam sampel menghamburkan cahaya.",
+            "Detektor mengukur intensitas hamburan cahaya.",
+            "Hasil ditampilkan dalam satuan NTU (Nephelometric Turbidity Unit.",
+        ],
+        "bahaya": [
+            "Pecahnya vial kaca.",
+            "Paparan sampel limbah yang berbahaya.",
+            "Kontaminasi silang antar sampel.",
+        ],
+        "warna_hex": "#f97316",
+    },
 ]
  
 # =========================
@@ -825,8 +914,6 @@ def render_instrumen_analitik(foto_map: dict = None):
         st.metric("Spektroskopi", sum(1 for i in instrumen_data if i["kategori"] == "Spektroskopi"))
     with col4:
         st.metric("Kromatografi", sum(1 for i in instrumen_data if i["kategori"] == "Kromatografi"))
- 
-    st.markdown("---")
 
     st.markdown("""
     <div style='text-align:center; color:#64748b; font-size:13px; 
