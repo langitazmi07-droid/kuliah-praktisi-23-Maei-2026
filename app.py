@@ -772,9 +772,9 @@ elif menu == "📝 Kuis":
                 st.rerun()
         with col_b:
             if st.button("🔍 Pelajari Alat Laboratorium"):
-            st.session_state.current_menu = "🔬 Alat Laboratorium"
-            st.help("Klik menu 'Alat Laboratorium'")
-            st.rerun()
+                st.session_state.current_menu = "🔬 Alat Laboratorium"
+                st.help("Klik menu 'Alat Laboratorium'")
+                st.rerun()
             
 
 
