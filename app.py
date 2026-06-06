@@ -475,6 +475,10 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 # =========================
 with st.sidebar:
     st.markdown("## ⚗️ PENGENALAN ALAT LABORATORIUM")
+    from instrumen_analitik import render_instrumen_analitik, instrumen_data
+
+    elif st.session_state.current_menu == "🔬 Instrumen Analitik":
+        render_instrumen_analitik()
     
     # 1. INISIALISASI SESSION STATE
     if 'current_menu' not in st.session_state:
