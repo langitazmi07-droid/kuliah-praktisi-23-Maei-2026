@@ -314,7 +314,7 @@ html, body, [class*="css"] {
 section[data-testid="stSidebar"] {
     background: rgba(15, 23, 42, 0.95) !important;
     border-right: 1px solid rgba(255,255,255,0.07);
-    width: 300px;
+    width: 200px;
 }
 
 section[data-testid="stSidebar"] * {
@@ -443,7 +443,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 }
 # Memperbesar ikon toggle sidebar saja
 [data-testid="stSidebarCollapseControl"] button {
-    transform: scale(2); 
+    transform: scale(5); 
     margin-left: 4px;      
 }
     
