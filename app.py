@@ -454,30 +454,33 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 # SIDEBAR
 # =========================
 with st.sidebar:
-    # Simpan state menu
-    if 'menu_pilihan' not in st.session_state:
-        st.session_state.menu_pilihan = "🏠 Beranda"
+    st.markdown("## ⚗️ PENGENALAN ALAT LABORATORIUM")
+    
+    # 1. INISIALISASI SESSION STATE
+    if 'current_menu' not in st.session_state:
+        st.session_state.current_menu = "🏠 Beranda"
 
-    st.markdown("## ⚗️ PENGENALAN ALAT LABORATOTIUM KIMIA")
-    st.markdown("<div style='color:#64748b;font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px'>Panduan Visual</div>", unsafe_allow_html=True)
+    # 2. DEFINISIKAN MENU OPTIONS
+    menu_options = ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"]
 
+    # 3. GUNA FUNGSI INDEX DENGAN AMAN
+    # Kita gunakan .index() tapi pastikan nilainya ada
+    try:
+        current_index = menu_options.index(st.session_state.current_menu)
+    except ValueError:
+        current_index = 0
+        st.session_state.current_menu = menu_options[0]
+
+    # 4. RADIO BUTTON
     menu = st.radio(
         "PETUNJUK",
-        ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"],
+        menu_options,
+        index=current_index,
         label_visibility="collapsed"
     )
 
-    st.markdown("---")
-    st.markdown(f"""
-    <div style='font-size:13px;color:#64748b;line-height:1.8'>
-    📦 <b style='color:#94a3b8'>9</b> Alat<br>
-    🗂️ <b style='color:#94a3b8'>5</b> Kategori<br>
-    📝 <b style='color:#94a3b8'>5</b> Soal Kuis<br>
-    📸 <b style='color:#94a3b8'>9</b> Foto Nyata
-    </div>
-    """, unsafe_allow_html=True)
-
-
+    # 5. UPDATE STATE
+    st.session_state.current_menu = menu
 # =========================
 # ── BERANDA ──
 # =========================
