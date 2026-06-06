@@ -266,7 +266,7 @@ instrumen_data = [
         "nama_lengkap": "Atomic Absorption Spectrophotometer",
         "emoji": "🔬",
         "kategori": "Analisis Logam",
-        "foto": "aas.jpg",
+        "foto": "aas.jpeg",
         "penjelasan": (
             "AAS adalah instrumen yang digunakan untuk menentukan konsentrasi logam dalam sampel "
             "berdasarkan penyerapan cahaya oleh atom bebas pada panjang gelombang tertentu."
@@ -303,7 +303,7 @@ instrumen_data = [
         "nama_lengkap": "High Performance Liquid Chromatography",
         "emoji": "💉",
         "kategori": "Kromatografi",
-        "foto": "hplc.jpg",
+        "foto": "hplc.jpeg",
         "penjelasan": (
             "HPLC adalah instrumen analisis yang digunakan untuk memisahkan, mengidentifikasi, dan menentukan "
             "kadar senyawa dalam suatu sampel cair. Pemisahan terjadi berdasarkan perbedaan interaksi senyawa "
@@ -341,7 +341,7 @@ instrumen_data = [
         "nama_lengkap": "Gas Chromatography",
         "emoji": "🌡️",
         "kategori": "Kromatografi",
-        "foto": "gc.jpg",
+        "foto": "gc.jpeg",
         "penjelasan": (
             "GC adalah instrumen yang digunakan untuk memisahkan dan menganalisis senyawa yang mudah menguap "
             "(volatile) dan stabil terhadap panas."
@@ -379,7 +379,7 @@ instrumen_data = [
         "nama_lengkap": "UV-Vis Spectrophotometer",
         "emoji": "💡",
         "kategori": "Spektroskopi",
-        "foto": "uvvis.jpg",
+        "foto": "uvvis.jpeg",
         "penjelasan": (
             "Spektrofotometer UV-Vis adalah instrumen yang digunakan untuk mengukur absorbansi atau "
             "transmitansi cahaya ultraviolet (UV) dan cahaya tampak (Visible) oleh suatu larutan."
@@ -413,7 +413,7 @@ instrumen_data = [
         "nama_lengkap": "pH Meter",
         "emoji": "🧪",
         "kategori": "Pengukuran Kimia",
-        "foto": "ph_meter.jpg",
+        "foto": "ph_meter.jpeg",
         "penjelasan": (
             "pH meter adalah alat yang digunakan untuk mengukur tingkat keasaman atau kebasaan suatu larutan "
             "secara elektrokimia menggunakan elektroda kaca."
@@ -449,7 +449,7 @@ instrumen_data = [
         "nama_lengkap": "Fourier Transform Infrared Spectroscopy",
         "emoji": "📡",
         "kategori": "Spektroskopi",
-        "foto": "ftir.jpg",
+        "foto": "ftir.jpeg",
         "penjelasan": (
             "FTIR digunakan untuk mengidentifikasi gugus fungsi dan struktur senyawa berdasarkan penyerapan "
             "radiasi inframerah oleh ikatan kimia dalam molekul."
@@ -482,7 +482,7 @@ instrumen_data = [
         "nama_lengkap": "Inductively Coupled Plasma Optical Emission Spectroscopy",
         "emoji": "⚡",
         "kategori": "Analisis Logam",
-        "foto": "icp.jpg",
+        "foto": "OCP-OES.jpeg",
         "penjelasan": (
             "ICP-OES digunakan untuk menentukan kadar unsur logam dengan mengukur cahaya yang dipancarkan "
             "atom atau ion dalam plasma bersuhu sangat tinggi."
@@ -516,7 +516,7 @@ instrumen_data = [
         "nama_lengkap": "Total Organic Carbon Analyzer",
         "emoji": "💧",
         "kategori": "Analisis Air",
-        "foto": "toc.jpg",
+        "foto": "toc.jpeg",
         "penjelasan": (
             "TOC Analyzer digunakan untuk menentukan jumlah karbon organik total dalam air atau sampel "
             "cair lainnya, penting untuk analisis kualitas air."
