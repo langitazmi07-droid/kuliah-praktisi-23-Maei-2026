@@ -477,15 +477,6 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-# Di bagian Sidebar
-menu_options = ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"]
-if 'current_menu' not in st.session_state:
-    st.session_state.current_menu = "🏠 Beranda"
-menu = st.sidebar.radio(
-    "PETUNJUK",
-    menu_options,
-    index=menu_options.index(st.session_state.current_menu)
-)
 
 # =========================
 # ── BERANDA ──
