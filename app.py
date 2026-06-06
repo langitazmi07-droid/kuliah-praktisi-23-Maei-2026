@@ -447,11 +447,11 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
 
 #MEMPERBESAR FONT SIDEBAR
 [data-testid="stSidebarNav"] {
-    font-size: 20px !important;
+    font-size: 200px !important;
     }
 
 [data-testid="stSidebarNav"] li {
-    padding: 20px 0px
+    padding: 200px 0px
     }
 
 [data-testid="stSidebarNav"] span {
