@@ -481,7 +481,7 @@ with st.sidebar:
         st.session_state.current_menu = "🏠 Beranda"
 
     # 2. DEFINISIKAN MENU OPTIONS
-    menu_options = ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"]
+    menu_options = ["🏠 Beranda", "🔬 Alat Laboratorium", "🖥️Instrumen Analitik" "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"]
 
     # 3. GUNA FUNGSI INDEX DENGAN AMAN
     try:
