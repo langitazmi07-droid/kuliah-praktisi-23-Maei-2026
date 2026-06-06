@@ -148,7 +148,7 @@ alat_data = [
         "emoji": "🔥",
         "kategori": "Sumber Panas",
         "foto": "pembakar spirtus.jpg",
-        "fungsi": "Sumber panas utama di laboratorium menggunakan bahan bakar spiritus (alkohol).",
+        "fungsi": "Sumber panas menggunakan bahan bakar spiritus (alkohol).",
         "penjelasan_awam": (
             "Pembakar spiritus adalah alat laboratorium yang berfungsi sebagai sumber panas atau api. Alat ini memanfaatkan cairan spiritus (alkohol yang "
             "didenaturasi) sebagai bahan bakar yang mengalir melalui sumbu untuk menghasilkan nyala"
