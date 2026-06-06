@@ -545,8 +545,8 @@ instrumen_data = [
         "nama": "Turbidimeter",
         "nama_lengkap": "Turbidimeter",
         "emoji": "⚡",
-        "kategori": "Analisis Logam",
-        "foto": "Turbidimeter",
+        "kategori": "Analisis Air",
+        "foto": "Turbidimeter.jpeg",
         "penjelasan": (
             "Turbidimeter digunakan untuk mengukur tingkat kekeruhan suatu sampel air."
         ),
@@ -571,12 +571,12 @@ instrumen_data = [
         "warna_hex": "#f97316",
     },
     {
-            "id": 10,
+        "id": 10,
         "nama": "Conductivity Meter",
         "nama_lengkap": "Conductivity Meter",
         "emoji": "⚡",
-        "kategori": "Analisis Logam",
-        "foto": "Conductivity_meter.jpeg",
+        "kategori": "Analisis Air",
+        "foto": "conductivity_meter.jpeg",
         "penjelasan": (
             "Conductivity Meter digunakan untuk mengukur kemampuan larutan menghantarkan arus listrik."
         ),
@@ -605,8 +605,8 @@ instrumen_data = [
         "nama": "Refraktometer",
         "nama_lengkap": "Refraktometer",
         "emoji": "⚡",
-        "kategori": "Analisis Logam",
-        "foto": "Refraktometer.jpeg",
+        "kategori": "Pengukuran Kimia",
+        "foto": "refraktometer.jpeg",
         "penjelasan": (
             "Refraktometer digunakan untuk mengukur indeks bias suatu larutan yang berkaitan dengan konsentrasi zat terlarut."
         ),
