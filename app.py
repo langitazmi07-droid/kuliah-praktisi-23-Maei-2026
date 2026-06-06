@@ -845,9 +845,8 @@ def render_instrumen_analitik(foto_map: dict = None):
     <div style="
         text-align: center;
     ">
-        <h1 style="font-size:2.2rem; margin:0 0 10px 0;">🔬 Instrumen Analitik Laboratorium</h1>
         <p style="color:#94a3b8; font-size:1.05rem; margin:0;">
-            Peralatan canggih untuk analisis kimia tingkat lanjut
+            🧪 Instrumen Analitik Laboratorium Kimia - Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
         </p>
     </div>
     """, unsafe_allow_html=True)
