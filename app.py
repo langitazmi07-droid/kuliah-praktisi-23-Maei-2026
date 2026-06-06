@@ -451,7 +451,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
     }
 
 [data-testid="stSidebarNav"] li {
-    padding: 10px 0px
+    padding: 20px 0px
     }
 
 [data-testid="stSidebarNav"] span {
