@@ -455,7 +455,7 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
     }
 
 [data-testid="stSidebarNav"] span {
-    font-size: 18px !important;
+    font-size: 30px !important;
     }
     
 </style>
