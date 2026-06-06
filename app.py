@@ -460,25 +460,6 @@ hr { border-color: rgba(255,255,255,0.07) !important; }
     border-radius: 20px !important;
 }
 
-#MENEBALKAN TOOGLE
-[data-testid="stSidebarCollapseControl"] {
-    font-weight: 900 !important; /* Membuat ikon lebih tebal */
-    transform: scale(1.5);       /* Memperbesar ukuran ikon */
-    color: #ffffff !important;   /* Memastikan warna kontras */
-# Memperbesar ikon toggle sidebar saja
-[data-testid="stSidebarCollapseControl"] button {
-    transform: scale(100); 
-    margin-left: 4px;      
-}    
-[data-testid="stSidebarCollapseControl"] svg {
-    stroke-width: 2.5px !important; /* Mengatur ketebalan garis ikon */
-}
-
-#MEMPERBESAR FONT SIDEBAR
-[data-testid="stSidebarNav"] {
-    font-size: 200px !important;
-    }
-
 [data-testid="stSidebarNav"] li {
     padding: 200px 0px
     }
