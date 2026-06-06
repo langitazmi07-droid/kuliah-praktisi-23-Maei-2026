@@ -21,8 +21,8 @@ alat_data = [
         "foto": "gelas ukur.jpg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
-            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+            "Beaker glass (atau gelas kimia/gelas piala) adalah wadah silindris dengan dasar datar"
+            "dan bibir tuang yang umum digunakan di laboratorium untuk menampung, mencampur, mengaduk, dan memanaskan cairan/larutan."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
@@ -38,7 +38,7 @@ alat_data = [
         "fungsi": "Wadah berbentuk kerucut dengan leher sempit, digunakan untuk titrasi dan melarutkan zat.",
         "penjelasan_awam": (
             "Bentuknya seperti botol dengan badan lebar di bawah dan leher sempit di atas. "
-            "Leher sempitnya berguna agar larutan tidak mudah tumpah saat digoyangkan — seperti botol saus yang dikocok."
+            "Leher sempitnya berguna agar larutan tidak mudah tumpah saat digoyangkan."
         ),
         "cara_guna": "Isi larutan, tutup mulutnya dengan tangan atau sumbat, goyangkan memutar saat titrasi berlangsung.",
         "bahaya": "⚠️ Jangan dipanaskan langsung tanpa alas kawat kasa.",
@@ -53,8 +53,9 @@ alat_data = [
         "foto": "burett.jpg",
         "fungsi": "Tabung panjang bergraduasi untuk mengukur dan mengeluarkan volume larutan secara presisi.",
         "penjelasan_awam": (
-            "Seperti spidol raksasa yang bisa menetes larutan secara perlahan dan terukur. "
-            "Dipakai saat kita perlu menambahkan larutan tetes demi tetes — sangat akurat seperti pipet medis di apotek."
+            "Buret adalah alat laboratorium berbentuk silinder panjang dari kaca yang dilengkapi dengan skala ukur dan keran"
+            "di bagian bawahnya. Alat ini berfungsi untuk meneteskan reagen cair atau titran dengan volume yang sangat presisi "
+            "dan akurasi tinggi, terutama pada proses analisis titrasi."
         ),
         "cara_guna": "Isi dari atas, buka kran bawah perlahan-lahan, baca angka volume yang berkurang.",
         "bahaya": "⚠️ Rapuh, jangan terjatuh. Kran kaca bisa macet jika tidak dibersihkan.",
@@ -69,9 +70,8 @@ alat_data = [
         "foto": "pipet tets.jpg",
         "fungsi": "Mengambil dan memindahkan cairan dalam jumlah kecil (tetes per tetes).",
         "penjelasan_awam": (
-            "Persis seperti pipet obat mata yang ada di rumah! Pencet bagian karet di atas, "
-            "celupkan ujungnya ke cairan, lepaskan — cairan terisap masuk. "
-            "Pindahkan ke tempat lain, pencet lagi untuk mengeluarkan."
+            "Pipet tetes berfungsi untuk memindahkan atau mengambil cairan dalam"
+            "jumlah yang sangat sedikit (skala tetesan) dari suatu wadah ke wadah lain."
         ),
         "cara_guna": "Pencet karet atas → celupkan → lepaskan karet → cairan masuk → pindahkan → pencet untuk keluarkan.",
         "bahaya": "⚠️ Jangan dihisap dengan mulut! Bisa menelan bahan kimia berbahaya.",
@@ -108,7 +108,7 @@ alat_data = [
         ),
         "cara_guna": "Isi maksimal ⅓ tabung, panaskan miring (jangan arahkan ke orang), amati perubahan.",
         "bahaya": "⚠️ Arahkan mulut tabung menjauh dari wajah saat dipanaskan — bisa meletup!",
-        "ukuran": "10–25 mL",
+        "ukuran": "10 mL – 25 mL",
         "warna_hex": "#ef4444",
     },
     {
@@ -125,7 +125,7 @@ alat_data = [
         ),
         "cara_guna": "Letakkan di atas labu/gelas, pasang kertas saring jika perlu, tuangkan larutan perlahan.",
         "bahaya": "⚠️ Pastikan corong tidak mampet agar cairan mengalir lancar.",
-        "ukuran": "Berbagai ukuran diameter",
+        "ukuran": "diameter 50 mm - 150 mm",
         "warna_hex": "#84cc16",
     },
     {
@@ -174,15 +174,15 @@ alat_data = [
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
-        "ukuran": "50 mL – 2000 mL",
+        "ukuran": "diameter 50 mm - 180 mm",
         "warna_hex": "#3b82f6",
     },
     {
         "id": 11,
-        "nama": "Gelas Porselen",
+        "nama": "Cawan Porselen",
         "emoji": "🥛",
         "kategori": "Wadah",
-        "foto": "gelas ukur.jpg",
+        "foto": "porselen",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -190,7 +190,7 @@ alat_data = [
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
-        "ukuran": "50 mL – 2000 mL",
+        "ukuran": "5 mL – 500 mL",
         "warna_hex": "#3b82f6",
     },
     {
@@ -198,7 +198,7 @@ alat_data = [
         "nama": "Segitiga Pembakar",
         "emoji": "🥛",
         "kategori": "Penyangga",
-        "foto": "gelas ukur.jpg",
+        "foto": "segitiga",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -214,7 +214,7 @@ alat_data = [
         "nama": "Desikator",
         "emoji": "🥛",
         "kategori": "Wadah",
-        "foto": "gelas ukur.jpg",
+        "foto": "desikator",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -230,7 +230,7 @@ alat_data = [
         "nama": "Pipet Mohr",
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
-        "foto": "gelas ukur.jpg",
+        "foto": "pipet mohr",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
@@ -246,7 +246,7 @@ alat_data = [
         "nama": "Pipet Volumetri",
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
-        "foto": "gelas ukur.jpg",
+        "foto": "pipet volumetri",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
             "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
