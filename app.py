@@ -602,39 +602,6 @@ elif menu == "🔬 Alat Laboratorium":
             "Fungsi": a["fungsi"],
             "Ukuran": a["ukuran"],
         }
-    ])
-
-# 3. Menampilkan tabel
-# Dalam terminal, ini akan terlihat rapi dengan rata kiri.
-# Untuk kebutuhan ekspor, kita bisa menyimpannya ke Excel agar pengaturan 
-# "wrap text" dan "align center" bisa dilakukan secara otomatis.
-
-print(df)
-
-# Opsional: Simpan ke file Excel agar bisa diatur formatnya secara otomatis
-# Anda memerlukan pustaka 'openpyxl' (pip install openpyxl)
-try:
-    with pd.ExcelWriter('Daftar_Alat_Lab.xlsx', engine='openpyxl') as writer:
-        df.to_excel(writer, index=False, sheet_name='AlatLab')
-        
-        # Mengatur format di Excel
-        workbook = writer.book
-        worksheet = writer.sheets['AlatLab']
-        
-        # Membuat semua teks di tengah (alignment) dan wrap text
-        from openpyxl.styles import Alignment
-        for row in worksheet.iter_rows(min_row=1, max_row=len(df)+1, min_col=1, max_col=3):
-            for cell in row:
-                cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
-        
-        # Menyesuaikan lebar kolom agar tidak terpotong
-        worksheet.column_dimensions['A'].width = 15
-        worksheet.column_dimensions['B'].width = 20
-        worksheet.column_dimensions['C'].width = 50
-        
-    print("\nFile 'Daftar_Alat_Lab.xlsx' berhasil dibuat dengan format rapi.")
-except Exception as e:
-    print(f"\nGagal membuat file Excel: {e}")
         for a in alat_data
 })
     st.dataframe(df, use_container_width=True, hide_index=True)
