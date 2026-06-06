@@ -771,6 +771,9 @@ elif menu == "📝 Kuis":
                 # Tidak bisa langsung pindah menu di Streamlit, tampilkan pesan
                 st.info("Pilih **Alat Laboratorium** di sidebar untuk mempelajari materi.")
 
+        if st.button("Pelajari Alat"):
+            st.switch_page("pages/daftar_alat.py")
+
 # =========================
 # FOOTER
 # =========================
