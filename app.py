@@ -70,7 +70,7 @@ alat_data = [
         "foto": "pipet tets.jpg",
         "fungsi": "Mengambil dan memindahkan cairan dalam jumlah kecil (tetes per tetes).",
         "penjelasan_awam": (
-            "Pipet tetes berfungsi untuk memindahkan atau mengambil cairan dalam"
+            "Pipet tetes berfungsi untuk memindahkan atau mengambil cairan dalam "
             "jumlah yang sangat sedikit (skala tetesan) dari suatu wadah ke wadah lain."
         ),
         "cara_guna": "Pencet karet atas → celupkan → lepaskan karet → cairan masuk → pindahkan → pencet untuk keluarkan.",
@@ -134,7 +134,7 @@ alat_data = [
         "foto": "kaki tiga.jpg",
         "fungsi": "Penyangga alat gelas saat proses pemanasan di atas pembakar spiritus.",
         "penjelasan_awam": (
-            "Kaki tiga adalah alat penyangga berkaki tiga yang umumnya digunakan di laboratorium kimia atau"
+            "Kaki tiga adalah alat penyangga berkaki tiga yang umumnya digunakan di laboratorium kimia atau "
             "biologi sebagai penopang wadah (seperti gelas beaker atau labu Erlenmeyer) saat proses pemanasan"
         ),
         "cara_guna": "Letakkan di atas pembakar spiritus, pasang kawat kasa di atasnya, baru letakkan gelas.",
@@ -150,7 +150,7 @@ alat_data = [
         "foto": "pembakar spirtus.jpg",
         "fungsi": "Sumber panas utama di laboratorium menggunakan bahan bakar spiritus (alkohol).",
         "penjelasan_awam": (
-            "Pembakar spiritus adalah alat laboratorium yang berfungsi sebagai sumber panas atau api. Alat ini memanfaatkan cairan spiritus (alkohol yang"
+            "Pembakar spiritus adalah alat laboratorium yang berfungsi sebagai sumber panas atau api. Alat ini memanfaatkan cairan spiritus (alkohol yang "
             "didenaturasi) sebagai bahan bakar yang mengalir melalui sumbu untuk menghasilkan nyala"
         ),
         "cara_guna": "Nyalakan sumbu dengan korek api, letakkan tepat di bawah kaki tiga, matikan dengan tutupnya (jangan ditiup!).",
@@ -182,7 +182,7 @@ alat_data = [
         "foto": "porselen.jpeg",
         "fungsi": "Sebagai penyangga krus porselen saat dipanaskan langsung di atas nyala api Bunsen.",
         "penjelasan_awam": (
-            "Cawan porselen adalah peralatan laboratorium khusus yang digunakan untuk memanaskan zat hingga suhu yang sangat tinggi. Cawan ini"
+            "Cawan porselen adalah peralatan laboratorium khusus yang digunakan untuk memanaskan zat hingga suhu yang sangat tinggi. Cawan ini "
             "terbuat dari porselen, sejenis keramik yang sangat tahan terhadap panas dan reaksi kimia."
         ),
         "cara_guna": "Letakkan bahan di atas kaca arloji sebelum ditimbang, atau letakkan di atas gelas kimia sebagai penutup agar tidak terkontaminasi.",
@@ -198,7 +198,7 @@ alat_data = [
         "foto": "segitiga.jpeg",
         "fungsi": "Digunakan untuk memanaskan zat kimia pada suhu yang sangat tinggi (mengabukan sampel atau memijarkan padatan).",
         "penjelasan_awam": (
-            "alat laboratorium yang berfungsi menopang wadah tahan panas, seperti cawan krus, saat proses pemanasan suhu tinggi"
+            "alat laboratorium yang berfungsi menopang wadah tahan panas, seperti cawan krus, saat proses pemanasan suhu tinggi "
             "menggunakan pembakar Bunsen. Alat ini memungkinkan kontak langsung dengan api dan distribusi panas yang merata."
         ),
         "cara_guna": "Letakkan sampel di dalam cawan, lalu letakkan di atas segitiga pembakar untuk dipanaskan.",
@@ -214,7 +214,7 @@ alat_data = [
         "foto": "desikator.jpeg",
         "fungsi": "Menyimpan sampel agar tetap kering atau menghilangkan air dari bahan kimia (menjaga kelembapan rendah).",
         "penjelasan_awam": (
-            "wadah tertutup kedap udara di laboratorium yang digunakan untuk menghilangkan kelembapan dari suatu zat atau mempertahankannya agar tetap kering."
+            "wadah tertutup kedap udara di laboratorium yang digunakan untuk menghilangkan kelembapan dari suatu zat atau mempertahankannya agar tetap kering. "
             "Alat ini sangat penting untuk mencegah bahan kimia atau sampel laboratorium menyerap uap air dari udara bebas. "
         ),
         "cara_guna": "Isi bagian bawah desikator dengan silika gel atau bahan pengering lainnya. Masukkan sampel, lalu tutup rapat (oleskan sedikit vaselin pada bibir penutup agar kedap udara).",
@@ -230,7 +230,7 @@ alat_data = [
         "foto": "pipet mohr.jpeg",
         "fungsi": "Mengambil larutan dengan volume yang dapat divariasikan.",
         "penjelasan_awam": (
-           " Pipet Mohr adalah jenis pipet yang memiliki garis-garis skala pengukuran di sepanjang tabungnya. Alat ini"
+           " Pipet Mohr adalah jenis pipet yang memiliki garis-garis skala pengukuran di sepanjang tabungnya. Alat ini "
             "digunakan untuk mengambil dan memindahkan berbagai macam variasi volume cairan sesuai dengan kebutuhan."
         ),
         "cara_guna": "Gunakan filler (bola hisap) untuk menyedot larutan hingga volume yang diinginkan sesuai skala, lalu alirkan perlahan.",
@@ -246,7 +246,7 @@ alat_data = [
         "foto": "pipet volumetri.jpeg",
         "fungsi": "WMengambil larutan dengan volume tunggal yang sangat akurat dan presisi (hanya satu ukuran/kapasitas).",
         "penjelasan_awam": (
-            "Pipet volumetri adalah alat laboratorium yang didesain khusus untuk mengukur dan memindahkan cairan dengan"
+            "Pipet volumetri adalah alat laboratorium yang didesain khusus untuk mengukur dan memindahkan cairan dengan "
             "satu volume tetap dan spesifik secara sangat akurat"
         ),
         "cara_guna": "Sedot cairan hingga melewati batas garis tanda, lalu lepaskan secara perlahan hingga meniskus cairan tepat berada pada garis. Alirkan dengan posisi tegak lurus.",
