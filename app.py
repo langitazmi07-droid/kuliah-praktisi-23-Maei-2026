@@ -40,7 +40,7 @@ alat_data = [
             "Bentuknya seperti botol dengan badan lebar di bawah dan leher sempit di atas. "
             "Leher sempitnya berguna agar larutan tidak mudah tumpah saat digoyangkan."
         ),
-        "cara_guna": "Isi larutan, tutup mulutnya dengan tangan atau sumbat, goyangkan memutar saat titrasi berlangsung.",
+        "cara_guna": "Isi larutan, goyangkan memutar saat titrasi berlangsung.",
         "bahaya": "⚠️ Jangan dipanaskan langsung tanpa alas kawat kasa.",
         "ukuran": "100 mL – 1000 mL",
         "warna_hex": "#8b5cf6",
@@ -86,8 +86,8 @@ alat_data = [
         "foto": "labu ukur.jpg",
         "fungsi": "Membuat larutan dengan volume yang sangat tepat dan akurat.",
         "penjelasan_awam": (
-            "Botol berbentuk buah pir dengan leher panjang yang ada garis tanda batasnya. "
-            "Dipakai saat kita butuh larutan dengan takaran pas — seperti mengikuti resep masakan yang harus presisi."
+            "Botol dengan leher panjang yang ada garis tanda batasnya. "
+            "Dipakai saat kita butuh larutan dengan volume yang sudah diketahui."
         ),
         "cara_guna": "Masukkan zat, tambahkan air sedikit demi sedikit hingga tepat di garis tanda batas, kocok rata.",
         "bahaya": "⚠️ Tidak boleh dipanaskan, kaca presisi bisa retak dan ukuran jadi tidak akurat.",
@@ -102,11 +102,10 @@ alat_data = [
         "foto": "tabung reaksi.jpg",
         "fungsi": "Tempat melakukan reaksi kimia dalam skala kecil.",
         "penjelasan_awam": (
-            "Tabung kecil berbentuk silinder panjang yang paling sering kita lihat di film-film sains. "
-            "Dipakai untuk mencampur bahan kimia dalam jumlah sedikit dan melihat apa yang terjadi — "
-            "apakah berubah warna, bergelembung, atau berasap!"
+            "Tabung kecil berbentuk silinder panjang. "
+            "Dipakai untuk mencampur bahan kimia dalam jumlah sedikit dan melihat perubahan yang terjadi."
         ),
-        "cara_guna": "Isi maksimal ⅓ tabung, panaskan miring (jangan arahkan ke orang), amati perubahan.",
+        "cara_guna": "Isi maksimal ⅓ tabung, panaskan miring (arahkan ke ruang kosong), amati perubahan.",
         "bahaya": "⚠️ Arahkan mulut tabung menjauh dari wajah saat dipanaskan — bisa meletup!",
         "ukuran": "10 mL – 25 mL",
         "warna_hex": "#ef4444",
@@ -119,9 +118,8 @@ alat_data = [
         "foto": "corong.jpg",
         "fungsi": "Memindahkan cairan ke wadah bermulut sempit dan menyaring larutan dengan kertas saring.",
         "penjelasan_awam": (
-            "Sama persis dengan corong yang dipakai di dapur untuk menuang minyak ke botol! "
+            "Corong laboratorium adalah alat berbentuk kerucut dengan mulut lebar di bagian atas dan pipa sempit di bagian bawah. "
             "Di laboratorium, sering dipasang kertas saring di dalamnya untuk memisahkan padatan dari cairan "
-            "— seperti menyaring ampas kopi."
         ),
         "cara_guna": "Letakkan di atas labu/gelas, pasang kertas saring jika perlu, tuangkan larutan perlahan.",
         "bahaya": "⚠️ Pastikan corong tidak mampet agar cairan mengalir lancar.",
@@ -136,8 +134,8 @@ alat_data = [
         "foto": "kaki tiga.jpg",
         "fungsi": "Penyangga alat gelas saat proses pemanasan di atas pembakar spiritus.",
         "penjelasan_awam": (
-            "Seperti kompor kaki tiga kecil dari besi! Diletakkan di atas api, kemudian di atasnya dipasang kawat kasa, "
-            "baru gelas beker diletakkan. Tanpa ini, gelas beker tidak bisa dipanaskan dengan stabil."
+            "Kaki tiga adalah alat penyangga berkaki tiga yang umumnya digunakan di laboratorium kimia atau"
+            "biologi sebagai penopang wadah (seperti gelas beaker atau labu Erlenmeyer) saat proses pemanasan"
         ),
         "cara_guna": "Letakkan di atas pembakar spiritus, pasang kawat kasa di atasnya, baru letakkan gelas.",
         "bahaya": "⚠️ Besi akan panas! Jangan disentuh saat sedang atau baru selesai dipakai.",
@@ -152,9 +150,8 @@ alat_data = [
         "foto": "pembakar spirtus.jpg",
         "fungsi": "Sumber panas utama di laboratorium menggunakan bahan bakar spiritus (alkohol).",
         "penjelasan_awam": (
-            "Seperti lilin besar dari logam! Berisi cairan spiritus (alkohol) dan ada sumbu kain di tengahnya. "
-            "Saat dinyalakan, menghasilkan api biru yang cukup panas untuk memanaskan larutan. "
-            "Mirip kompor spirtus yang dipakai saat kemping."
+            "Pembakar spiritus adalah alat laboratorium yang berfungsi sebagai sumber panas atau api. Alat ini memanfaatkan cairan spiritus (alkohol yang"
+            "didenaturasi) sebagai bahan bakar yang mengalir melalui sumbu untuk menghasilkan nyala"
         ),
         "cara_guna": "Nyalakan sumbu dengan korek api, letakkan tepat di bawah kaki tiga, matikan dengan tutupnya (jangan ditiup!).",
         "bahaya": "⚠️ JANGAN ditiup untuk mematikan — bisa memercikkan api! Gunakan tutupnya.",
@@ -169,8 +166,8 @@ alat_data = [
         "foto": "kaca arloji.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
-            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+            "peralatan laboratorium berbentuk piringan bundar dan cekung yang terbuat dari kaca transparan. Alat ini"
+            "dinamakan demikian karena bentuknya yang menyerupai kaca penutup jam tangan."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
@@ -185,8 +182,8 @@ alat_data = [
         "foto": "porselen.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
-            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+            "Cawan porselen adalah peralatan laboratorium khusus yang digunakan untuk memanaskan zat hingga suhu yang sangat tinggi. Cawan ini"
+            "terbuat dari porselen, sejenis keramik yang sangat tahan terhadap panas dan reaksi kimia."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
@@ -201,8 +198,8 @@ alat_data = [
         "foto": "segitiga.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
-            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+            "alat laboratorium yang berfungsi menopang wadah tahan panas, seperti cawan krus, saat proses pemanasan suhu tinggi"
+            "menggunakan pembakar Bunsen. Alat ini memungkinkan kontak langsung dengan api dan distribusi panas yang merata."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
@@ -217,8 +214,8 @@ alat_data = [
         "foto": "desikator.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
-            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+            "wadah tertutup kedap udara di laboratorium yang digunakan untuk menghilangkan kelembapan dari suatu zat atau mempertahankannya agar tetap kering."
+            "Alat ini sangat penting untuk mencegah bahan kimia atau sampel laboratorium menyerap uap air dari udara bebas. "
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
@@ -233,8 +230,8 @@ alat_data = [
         "foto": "pipet mohr.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
-            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+           " Pipet Mohr adalah jenis pipet yang memiliki garis-garis skala pengukuran di sepanjang tabungnya. Alat ini"
+            "digunakan untuk mengambil dan memindahkan berbagai macam variasi volume cairan sesuai dengan kebutuhan."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
@@ -249,8 +246,8 @@ alat_data = [
         "foto": "pipet volumetri.jpeg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
         "penjelasan_awam": (
-            "Bayangkan ini seperti gelas minum biasa, tapi terbuat dari kaca khusus tahan panas. "
-            "Dipakai untuk mencampur bahan-bahan kimia seperti kamu mencampur minuman, tapi lebih hati-hati!"
+            "Pipet volumetri adalah alat laboratorium yang didesain khusus untuk mengukur dan memindahkan cairan dengan"
+            "satu volume tetap dan spesifik secara sangat akurat"
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
         "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
