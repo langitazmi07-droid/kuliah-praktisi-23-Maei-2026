@@ -602,7 +602,7 @@ elif menu == "🔬 Alat Laboratorium":
             "Fungsi": a["fungsi"],
             "Ukuran": a["ukuran"],
         }
-    ]}
+    ])
 
 # 3. Menampilkan tabel
 # Dalam terminal, ini akan terlihat rapi dengan rata kiri.
