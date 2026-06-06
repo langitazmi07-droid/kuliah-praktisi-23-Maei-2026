@@ -202,7 +202,7 @@ alat_data = [
             "menggunakan pembakar Bunsen. Alat ini memungkinkan kontak langsung dengan api dan distribusi panas yang merata."
         ),
         "cara_guna": "Letakkan sampel di dalam cawan, lalu letakkan di atas segitiga pembakar untuk dipanaskan.",
-        "bahaya": "⚠️ Kaca tipis, bisa pecah jika kena benturaPermukaan porselen tetap panas dalam waktu lama setelah pemanasan. Risiko retak jika terkena perubahan suhu ekstrem secara mendadak (thermal shock).",
+        "bahaya": "⚠️ Kaca tipis, bisa pecah jika kena benturan. Permukaan porselen tetap panas dalam waktu lama setelah pemanasan. Risiko retak jika terkena perubahan suhu ekstrem secara mendadak (thermal shock).",
         "ukuran": "50 mm-75 mm setiap sisinya",
         "warna_hex": "#3b82f6",
     },
