@@ -544,7 +544,7 @@ instrumen_data = [
         "id": 9,
         "nama": "Turbidimeter",
         "nama_lengkap": "Turbidimeter",
-        "emoji": "⚡",
+        "emoji": "💧",
         "kategori": "Analisis Air",
         "foto": "Turbidimeter.jpeg",
         "penjelasan": (
@@ -574,7 +574,7 @@ instrumen_data = [
         "id": 10,
         "nama": "Conductivity Meter",
         "nama_lengkap": "Conductivity Meter",
-        "emoji": "⚡",
+        "emoji": "💧",
         "kategori": "Analisis Air",
         "foto": "conductivity_meter.jpeg",
         "penjelasan": (
@@ -604,7 +604,7 @@ instrumen_data = [
         "id": 11,
         "nama": "Refraktometer",
         "nama_lengkap": "Refraktometer",
-        "emoji": "⚡",
+        "emoji": "💡",
         "kategori": "Pengukuran Kimia",
         "foto": "refraktometer.jpeg",
         "penjelasan": (
