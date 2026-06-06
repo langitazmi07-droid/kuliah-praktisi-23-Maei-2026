@@ -840,12 +840,6 @@ def render_instrumen_analitik(foto_map: dict = None):
  
     st.markdown(f"<p style='color:#64748b; font-size:13px;'>Menampilkan {len(tampil)} instrumen</p>",
                 unsafe_allow_html=True)
-
-    st.markdown("""
-    <div class="footer">
-        🧪 Instrumen Analitik Laboratorium Kimia -- Selalu ikuti prosedur keselamatan saat mengoperasikab instrumen
-    </<div>
-        
  
     # ── Daftar Instrumen ─────────────────────────────────────
     for instrumen in tampil:
