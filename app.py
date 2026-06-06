@@ -228,7 +228,7 @@ alat_data = [
     {
         "id": 14,
         "nama": "Pipet Mohr",
-        "emoji": "🥛",
+        "emoji": "💧",
         "kategori": "Pemindah Cairan",
         "foto": "gelas ukur.jpg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
@@ -244,7 +244,7 @@ alat_data = [
     {
         "id": 14,
         "nama": "Pipet Volumetri",
-        "emoji": "🥛",
+        "emoji": "💧",
         "kategori": "Pemindah Cairan",
         "foto": "gelas ukur.jpg",
         "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
