@@ -477,6 +477,16 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
+# Di bagian Sidebar
+menu_options = ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"]
+if 'current_menu' not in st.session_state:
+    st.session_state.current_menu = "🏠 Beranda"
+menu = st.sidebar.radio(
+    "PETUNJUK",
+    menu_options,
+    index=menu_options.index(st.session_state.current_menu)
+)
+
 # =========================
 # ── BERANDA ──
 # =========================
@@ -771,8 +781,9 @@ elif menu == "📝 Kuis":
                 # Tidak bisa langsung pindah menu di Streamlit, tampilkan pesan
                 st.info("Pilih **Alat Laboratorium** di sidebar untuk mempelajari materi.")
 
-        if st.button("Pelajari Alat"):
-            st.switch_page("pages/daftar_alat.py")
+if st.button("🔍 Pelajari Alat Laboratorium"):
+    st.session_state.current_menu = "🔬 Alat Laboratorium"
+    st.rerun()
 
 # =========================
 # FOOTER
