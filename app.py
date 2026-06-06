@@ -576,7 +576,7 @@ instrumen_data = [
         "nama_lengkap": "Conductivity Meter",
         "emoji": "💧",
         "kategori": "Analisis Air",
-        "foto": "conductivity_meter.jpeg",
+        "foto": "conductivity _meter.jpeg",
         "penjelasan": (
             "Conductivity Meter digunakan untuk mengukur kemampuan larutan menghantarkan arus listrik."
         ),
