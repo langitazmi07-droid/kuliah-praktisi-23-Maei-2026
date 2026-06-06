@@ -830,11 +830,9 @@ def render_instrumen_analitik(foto_map: dict = None):
     <div style='text-align:center; color:#64748b; font-size:13px; 
          margin-top:40px; padding:16px;
          border-top:1px solid rgba(255,255,255,0.06)'>
-         text-align: center;
          🧪 Instrumen Analitik Laboratorium Kimia - Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
     </div>
     """, unsafe_allow_html=True)
-    st.markdown("---")
  
     # ── Filter ───────────────────────────────────────────────
     semua_kategori = ["Semua"] + sorted({i["kategori"] for i in instrumen_data})
