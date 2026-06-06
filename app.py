@@ -164,7 +164,7 @@ alat_data = [
         "emoji": "🧫",
         "kategori": "Wadah",
         "foto": "kaca arloji.jpeg",
-        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "fungsi": "Untuk menimbang bahan kimia padat, menutup wadah saat pemanasan sampel, atau sebagai wadah untuk menguapkan sedikit larutan.",
         "penjelasan_awam": (
             "peralatan laboratorium berbentuk piringan bundar dan cekung yang terbuat dari kaca transparan. Alat ini"
             "dinamakan demikian karena bentuknya yang menyerupai kaca penutup jam tangan."
@@ -180,13 +180,13 @@ alat_data = [
         "emoji": "🥛",
         "kategori": "Wadah",
         "foto": "porselen.jpeg",
-        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "fungsi": "Sebagai penyangga krus porselen saat dipanaskan langsung di atas nyala api Bunsen.",
         "penjelasan_awam": (
             "Cawan porselen adalah peralatan laboratorium khusus yang digunakan untuk memanaskan zat hingga suhu yang sangat tinggi. Cawan ini"
             "terbuat dari porselen, sejenis keramik yang sangat tahan terhadap panas dan reaksi kimia."
         ),
-        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
-        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "cara_guna": "Letakkan bahan di atas kaca arloji sebelum ditimbang, atau letakkan di atas gelas kimia sebagai penutup agar tidak terkontaminasi.",
+        "bahaya": "⚠️ Mudah pecah/retak. Jika digunakan untuk menutup wadah panas, hati-hati saat membukanya karena uap panas akan keluar.",
         "ukuran": "5 mL – 500 mL",
         "warna_hex": "#3b82f6",
     },
@@ -196,14 +196,14 @@ alat_data = [
         "emoji": "🔥",
         "kategori": "Penyangga",
         "foto": "segitiga.jpeg",
-        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "fungsi": "Digunakan untuk memanaskan zat kimia pada suhu yang sangat tinggi (mengabukan sampel atau memijarkan padatan).",
         "penjelasan_awam": (
             "alat laboratorium yang berfungsi menopang wadah tahan panas, seperti cawan krus, saat proses pemanasan suhu tinggi"
             "menggunakan pembakar Bunsen. Alat ini memungkinkan kontak langsung dengan api dan distribusi panas yang merata."
         ),
-        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
-        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
-        "ukuran": "50 mL – 2000 mL",
+        "cara_guna": "Letakkan sampel di dalam cawan, lalu letakkan di atas segitiga pembakar untuk dipanaskan.",
+        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturaPermukaan porselen tetap panas dalam waktu lama setelah pemanasan. Risiko retak jika terkena perubahan suhu ekstrem secara mendadak (thermal shock).",
+        "ukuran": "50 mm-75 mm setiap sisinya",
         "warna_hex": "#3b82f6",
     },
     {
@@ -212,13 +212,13 @@ alat_data = [
         "emoji": "🥛",
         "kategori": "Wadah",
         "foto": "desikator.jpeg",
-        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "fungsi": "Menyimpan sampel agar tetap kering atau menghilangkan air dari bahan kimia (menjaga kelembapan rendah).",
         "penjelasan_awam": (
             "wadah tertutup kedap udara di laboratorium yang digunakan untuk menghilangkan kelembapan dari suatu zat atau mempertahankannya agar tetap kering."
             "Alat ini sangat penting untuk mencegah bahan kimia atau sampel laboratorium menyerap uap air dari udara bebas. "
         ),
-        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
-        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "cara_guna": "Isi bagian bawah desikator dengan silika gel atau bahan pengering lainnya. Masukkan sampel, lalu tutup rapat (oleskan sedikit vaselin pada bibir penutup agar kedap udara).",
+        "bahaya": "⚠️ Risiko implosi (pecah ke dalam) jika terjadi retakan pada kaca saat keadaan vakum. Selalu geser penutupnya sebelum diangkat, jangan ditarik paksa.",
         "ukuran": "50 mL – 2000 mL",
         "warna_hex": "#3b82f6",
     },
@@ -228,14 +228,14 @@ alat_data = [
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
         "foto": "pipet mohr.jpeg",
-        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "fungsi": "Mengambil larutan dengan volume yang dapat divariasikan.",
         "penjelasan_awam": (
            " Pipet Mohr adalah jenis pipet yang memiliki garis-garis skala pengukuran di sepanjang tabungnya. Alat ini"
             "digunakan untuk mengambil dan memindahkan berbagai macam variasi volume cairan sesuai dengan kebutuhan."
         ),
-        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
-        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
-        "ukuran": "50 mL – 2000 mL",
+        "cara_guna": "Gunakan filler (bola hisap) untuk menyedot larutan hingga volume yang diinginkan sesuai skala, lalu alirkan perlahan.",
+        "bahaya": "⚠️ Jika digunakan untuk zat korosif, pastikan filler bekerja dengan baik agar cairan tidak terhisap masuk ke dalam filler.",
+        "ukuran": "5 mL – 50 mL",
         "warna_hex": "#3b82f6",
     },
     {
@@ -244,14 +244,14 @@ alat_data = [
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
         "foto": "pipet volumetri.jpeg",
-        "fungsi": "Wadah serbaguna untuk mencampur, memanaskan, dan menyimpan larutan kimia.",
+        "fungsi": "WMengambil larutan dengan volume tunggal yang sangat akurat dan presisi (hanya satu ukuran/kapasitas).",
         "penjelasan_awam": (
             "Pipet volumetri adalah alat laboratorium yang didesain khusus untuk mengukur dan memindahkan cairan dengan"
             "satu volume tetap dan spesifik secara sangat akurat"
         ),
-        "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
-        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
-        "ukuran": "50 mL – 2000 mL",
+        "cara_guna": "Sedot cairan hingga melewati batas garis tanda, lalu lepaskan secara perlahan hingga meniskus cairan tepat berada pada garis. Alirkan dengan posisi tegak lurus.",
+        "bahaya": "⚠️ Umumnya terbuat dari kaca tipis yang mudah patah. Hindari memaksakan pipet masuk ke dalam wadah yang sempit.",
+        "ukuran": "5  mL – 100 mL",
         "warna_hex": "#3b82f6",
     },
 ]
