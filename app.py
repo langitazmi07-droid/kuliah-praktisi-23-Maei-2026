@@ -505,10 +505,10 @@ if menu == "🏠 Beranda":
 
     # Statistik
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("🧪 Total Alat", "9")
+    c1.metric("🧪 Total Alat", "15")
     c2.metric("📁 Kategori", "5")
     c3.metric("📝 Soal Kuis", "5")
-    c4.metric("📸 Foto Alat", "9")
+    c4.metric("📸 Foto Alat", "15")
 
     st.markdown("---")
 
@@ -637,7 +637,7 @@ elif menu == "📖 Panduan Keselamatan":
 
     st.markdown("---")
     st.markdown("### 📞 Pertolongan Pertama Darurat")
-    st.info("Segera hubungi guru/pengawas laboratorium jika terjadi kecelakaan!")
+    st.markdown("<p class='teks-kustom'>Segera hubungi guru/pengawas laboratorium jika terjadi kecelakaan!</p>", unsafe_allow_html=True)
 
     darurat = [
         ("👁️ Terkena cairan di mata", "Segera siram dengan air bersih mengalir selama 15 menit, jangan digosok."),
