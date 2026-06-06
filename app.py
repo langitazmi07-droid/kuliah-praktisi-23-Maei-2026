@@ -771,7 +771,7 @@ elif menu == "📝 Kuis":
                 st.session_state.kuis_submit = False
                 st.rerun()
         with col_b:
-            if st.button("🔍 Pelajari Alat Laboratorium"):
+            if st.button("🔍 Pelajari Alat Laboratorium", use_container_width=True):
                 st.session_state.current_menu = "🔬 Alat Laboratorium"
                 st.help("Klik menu 'Alat Laboratorium'")
                 st.rerun()
