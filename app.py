@@ -166,7 +166,7 @@ alat_data = [
         "foto": "kaca arloji.jpeg",
         "fungsi": "Untuk menimbang bahan kimia padat, menutup wadah saat pemanasan sampel, atau sebagai wadah untuk menguapkan sedikit larutan.",
         "penjelasan_awam": (
-            "peralatan laboratorium berbentuk piringan bundar dan cekung yang terbuat dari kaca transparan. Alat ini"
+            "peralatan laboratorium berbentuk piringan bundar dan cekung yang terbuat dari kaca transparan. Alat ini "
             "dinamakan demikian karena bentuknya yang menyerupai kaca penutup jam tangan."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
