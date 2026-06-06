@@ -464,7 +464,6 @@ with st.sidebar:
     menu_options = ["🏠 Beranda", "🔬 Alat Laboratorium", "📖 Panduan Keselamatan", "📝 Kuis", "ℹ️ Tentang Kami"]
 
     # 3. GUNA FUNGSI INDEX DENGAN AMAN
-    # Kita gunakan .index() tapi pastikan nilainya ada
     try:
         current_index = menu_options.index(st.session_state.current_menu)
     except ValueError:
@@ -481,6 +480,7 @@ with st.sidebar:
 
     # 5. UPDATE STATE
     st.session_state.current_menu = menu
+    
 # =========================
 # ── BERANDA ──
 # =========================
@@ -771,13 +771,13 @@ elif menu == "📝 Kuis":
                 st.session_state.kuis_submit = False
                 st.rerun()
         with col_b:
-            if st.button("🔬 Pelajari Alat", use_container_width=True):
-                # Tidak bisa langsung pindah menu di Streamlit, tampilkan pesan
-                st.info("Pilih **Alat Laboratorium** di sidebar untuk mempelajari materi.")
+            if st.button("🔍 Pelajari Alat Laboratorium"):
+            st.session_state.current_menu = "🔬 Alat Laboratorium"
+            st.help("Klik menu 'Alat Laboratorium'")
+            st.rerun()
+            
 
-if st.button("🔍 Pelajari Alat Laboratorium"):
-    st.session_state.current_menu = "🔬 Alat Laboratorium"
-    st.rerun()
+
 
 # =========================
 # FOOTER
