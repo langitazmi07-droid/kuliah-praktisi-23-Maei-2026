@@ -81,7 +81,7 @@ alat_data = [
     {
         "id": 5,
         "nama": "Labu Ukur",
-        "emoji": "🫧",
+        "emoji": "🧫",
         "kategori": "Pengukur Volume",
         "foto": "labu ukur.jpg",
         "fungsi": "Membuat larutan dengan volume yang sangat tepat dan akurat.",
