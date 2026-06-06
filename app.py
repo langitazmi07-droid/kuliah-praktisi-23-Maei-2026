@@ -170,7 +170,7 @@ alat_data = [
             "dinamakan demikian karena bentuknya yang menyerupai kaca penutup jam tangan."
         ),
         "cara_guna": "Tuang larutan ke dalamnya, aduk dengan batang pengaduk, bisa dipanaskan di atas kompor bunsen.",
-        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturan.",
+        "bahaya": "⚠️  Kaca tipis, bisa pecah jika kena benturan.",
         "ukuran": "diameter 50 mm - 180 mm",
         "warna_hex": "#3b82f6",
     },
@@ -202,7 +202,7 @@ alat_data = [
             "menggunakan pembakar Bunsen. Alat ini memungkinkan kontak langsung dengan api dan distribusi panas yang merata."
         ),
         "cara_guna": "Letakkan sampel di dalam cawan, lalu letakkan di atas segitiga pembakar untuk dipanaskan.",
-        "bahaya": "⚠️ Jangan dipakai untuk minum! Kaca tipis, bisa pecah jika kena benturaPermukaan porselen tetap panas dalam waktu lama setelah pemanasan. Risiko retak jika terkena perubahan suhu ekstrem secara mendadak (thermal shock).",
+        "bahaya": "⚠️ Kaca tipis, bisa pecah jika kena benturaPermukaan porselen tetap panas dalam waktu lama setelah pemanasan. Risiko retak jika terkena perubahan suhu ekstrem secara mendadak (thermal shock).",
         "ukuran": "50 mm-75 mm setiap sisinya",
         "warna_hex": "#3b82f6",
     },
@@ -244,7 +244,7 @@ alat_data = [
         "emoji": "💧",
         "kategori": "Pemindah Cairan",
         "foto": "pipet volumetri.jpeg",
-        "fungsi": "WMengambil larutan dengan volume tunggal yang sangat akurat dan presisi (hanya satu ukuran/kapasitas).",
+        "fungsi": "Mengambil larutan dengan volume tunggal yang sangat akurat dan presisi (hanya satu ukuran/kapasitas).",
         "penjelasan_awam": (
             "Pipet volumetri adalah alat laboratorium yang didesain khusus untuk mengukur dan memindahkan cairan dengan "
             "satu volume tetap dan spesifik secara sangat akurat"
