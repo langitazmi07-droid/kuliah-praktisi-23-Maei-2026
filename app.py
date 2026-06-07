@@ -878,7 +878,7 @@ with st.sidebar:
     st.session_state.current_menu = menu
     
 # =========================
-# ── INSTRUMEN LABORATORIUM──
+# ── INSTRUMEN LABORATORIUM ──
 # =========================
 # FUNGSI RENDER HALAMAN
 def render_instrumen_analitik(foto_map: dict = None):
@@ -1040,7 +1040,7 @@ if menu == "🏠 Beranda":
 
     # Gambar hero
     st.image(
-        "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=1200&q=80",
+        "lab foto.jpg",
         use_container_width=True,
         caption='"Pertemuan dua kepribadian seperti kontak dua zat kimia: Jika ada reaksi, keduanya berubah - CG Jung"',
     )
