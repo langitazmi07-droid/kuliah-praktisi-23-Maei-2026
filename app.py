@@ -985,7 +985,7 @@ def render_instrumen_analitik(foto_map: dict = None):
                 f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
             expanded=False,
         ):
-            col_foto, col_info = st.columns([1, 2], gap="large")
+                col_foto, col_info = st.columns([1, 2], gap="large")
  
             # Kolom foto
             with col_foto:
