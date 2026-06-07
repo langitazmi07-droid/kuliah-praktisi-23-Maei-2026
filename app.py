@@ -960,7 +960,7 @@ def render_instrumen_analitik():
                 <div class="info-box box-bahaya"><div class="label-kecil" style="color:#ef4444;">⚠️ Bahaya & Keselamatan</div>{"".join(f"<li>{b}</li>" for b in instrumen['bahaya'])}</div>
                 """, unsafe_allow_html=True)
             
-            # Box Perawatan Baru
+            # Box Perawatan
             st.markdown(f"""
             <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:16px;">
                 <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
@@ -1036,7 +1036,7 @@ elif menu == "🔬 Alat Laboratorium":
     #Statistik
     c1, c2, = st.columns(2)
     c1.metric("🧪 Total Alat ", "15")
-    c2.metric("📁 Total Kategori", "10")
+    c2.metric("🔍 Total Kategori", "7")
 
     st.markdown("---")
 
