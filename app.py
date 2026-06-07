@@ -912,7 +912,7 @@ def render_instrumen_analitik(foto_map: dict = None):
             # ... (Kolom cara kerja dan bahaya sama seperti sebelumnya)
             
             # --- TAMBAHKAN BLOK PERAWATAN DI SINI (SETELAH KOLOM BAHAYA) ---
-            st.markdown(f"""
+        st.markdown(f"""
             <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:16px;">
                 <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
                 <div style="color:#e2e8f0;line-height:1.6;">{perawatan_teks}</div>
