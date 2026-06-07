@@ -1042,7 +1042,7 @@ def render_instrumen_analitik(foto_map: dict = None):
                 </div>
                 """, unsafe_allow_html=True)
  
-        st.markdown("")  # spasi antar instrumen
+            st.markdown("")  # spasi antar instrumen
     
 # =========================
 # ── BERANDA ──
