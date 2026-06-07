@@ -1054,17 +1054,17 @@ if menu == "🏠 Beranda":
         <div style='display:inline-block;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);
              border-radius:999px;padding:6px 18px;font-size:12px;color:#60a5fa;
              letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:20px'>
-            🔬 Panduan Untuk Pemula
+            Panduan Operasional
         </div>
         <h1 style='font-size:clamp(28px,5vw,52px);line-height:1.2;margin-bottom:16px'>
             Kenali Alat<br>
             <span style='background:linear-gradient(135deg,#3b82f6,#8b5cf6,#06b6d4);
                   -webkit-background-clip:text;-webkit-text-fill-color:transparent'>
-                Laboratorium Kimia
+                Alat Laboratorium Kimia
             </span>
         </h1>
         <p style='color:#94a3b8;font-size:17px;max-width:500px;margin:0 auto 30px;line-height:1.7'>
-            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan
+            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan, risiko bahaya, dan cara perawatan
         </p>
     </div>
     """, unsafe_allow_html=True)
