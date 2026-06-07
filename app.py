@@ -968,34 +968,6 @@ def render_instrumen_analitik():
             </div>
             """, unsafe_allow_html=True)
 
-for alat in alat_data:
-        with st.expander(f"{alat['emoji']} {alat['nama']}", expanded=False):
-            
-            col1, col2 = st.columns([1, 2])
-            with col1:
-                st.image(alat['foto'], use_container_width=True)
-            with col2:
-                st.write(f"**Penjelasan:** {alat['penjelasan_awam']}")
-            
-            col_a, col_b = st.columns(2)
-            with col_a:
-                st.markdown(f"**🔧 Cara Kerja:**\n{alat['cara_guna']}")
-            with col_b:
-                st.markdown(f"**⚠️ Bahaya:**\n{alat['bahaya']}")
-            
-            st.markdown("---") # Garis pemisah agar rapi
-            st.markdown(f"""
-            <div style="
-                background-color: #f0f7ff; 
-                padding: 15px; 
-                border-radius: 10px; 
-                border-left: 5px solid #3b82f6;
-            ">
-                <h4 style="margin-top: 0; color: #1e3a8a;">🛠️ Cara Perawatan</h4>
-                <p style="margin-bottom: 0;">{alat['perawatan']}</p>
-            </div>
-            """, unsafe_allow_html=True)
-            
 # =========================
 # ── BERANDA ──
 # =========================
