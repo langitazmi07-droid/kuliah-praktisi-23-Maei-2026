@@ -645,14 +645,6 @@ instrumen_data = [
         ],
         "warna_hex": "#f97316",
     },
-
-    data_perawatan = {
-        "Spektroskopi": "Bersihkan komponen optik (kuvet, kristal ATR, nebulizer, torch) setelah digunakan. Lakukan kalibrasi berkala, jaga kebersihan area sampel, dan perhatikan kelembapan ruangan.",
-        "Kromatografi": "Rutin bersihkan jalur aliran (flush sistem), ganti spare part habis pakai (septum, liner, filter), dan pastikan kemurnian pelarut/gas pembawa sesuai spesifikasi.",
-        "Pengukuran Kimia": "Bilas elektroda/probe setelah pakai. Simpan elektroda pH dalam larutan penyimpanan (bukan akuades) dan lakukan kalibrasi rutin dengan larutan standar.",
-        "Analisis Air": "Bersihkan jalur sampel, jaga kebersihan vial/prisma dari sidik jari atau goresan, dan pastikan instrumen tertutup debu saat tidak digunakan.",
-        "Analisis Logam": "Bersihkan komponen optik dan nebulizer setelah digunakan. Lakukan kalibrasi berkala, jaga kebersihan area sampel, dan perhatikan kelembapan ruangan."
-    }
 ]
  
 # =========================
@@ -905,6 +897,27 @@ with st.sidebar:
 # =========================
 # FUNGSI RENDER HALAMAN
 def render_instrumen_analitik(foto_map: dict = None):
+    data_perawatan = {
+        "Spektroskopi": "Bersihkan komponen optik (kuvet, kristal ATR, nebulizer, torch) setelah digunakan. Lakukan kalibrasi berkala, jaga kebersihan area sampel, dan perhatikan kelembapan ruangan.",
+        "Kromatografi": "Rutin bersihkan jalur aliran (flush sistem), ganti spare part habis pakai (septum, liner, filter), dan pastikan kemurnian pelarut/gas pembawa sesuai spesifikasi.",
+        "Pengukuran Kimia": "Bilas elektroda/probe setelah pakai. Simpan elektroda pH dalam larutan penyimpanan (bukan akuades) dan lakukan kalibrasi rutin dengan larutan standar.",
+        "Analisis Air": "Bersihkan jalur sampel, jaga kebersihan vial/prisma dari sidik jari atau goresan, dan pastikan instrumen tertutup debu saat tidak digunakan.",
+        "Analisis Logam": "Bersihkan komponen optik dan nebulizer setelah digunakan. Lakukan kalibrasi berkala, jaga kebersihan area sampel, dan perhatikan kelembapan ruangan."
+    }
+    for instrumen in tampil:
+        warna = instrumen["warna_hex"]
+        # Ambil perawatan berdasarkan kategori, default jika tidak ditemukan
+        perawatan_teks = data_perawatan.get(instrumen["kategori"], "Pastikan instrumen selalu bersih, kalibrasi secara rutin, dan simpan dalam kondisi aman.")
+          # ... (Kolom foto dan informasi sama seperti sebelumnya)
+            # ... (Kolom cara kerja dan bahaya sama seperti sebelumnya)
+            
+            # --- TAMBAHKAN BLOK PERAWATAN DI SINI (SETELAH KOLOM BAHAYA) ---
+            st.markdown(f"""
+            <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:16px;">
+                <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
+                <div style="color:#e2e8f0;line-height:1.6;">{perawatan_teks}</div>
+            </div>
+            """, unsafe_allow_html=True)
     """
     Render halaman Instrumen Analitik.
     foto_map: dict {nama_file: bytes} opsional, untuk menampilkan foto nyata.
@@ -961,26 +974,10 @@ def render_instrumen_analitik(foto_map: dict = None):
                 unsafe_allow_html=True)
  
     # ── Daftar Instrumen ─────────────────────────────────────
-    for instrumen in tampil:
-        warna = instrumen["warna_hex"]
-        # Ambil perawatan berdasarkan kategori, default jika tidak ditemukan
-        perawatan_teks = data_perawatan.get(instrumen["kategori"], "Pastikan instrumen selalu bersih, kalibrasi secara rutin, dan simpan dalam kondisi aman.")
-
         with st.expander(
             f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
             expanded=False,
         ):
-            # ... (Kolom foto dan informasi sama seperti sebelumnya)
-            # ... (Kolom cara kerja dan bahaya sama seperti sebelumnya)
-            
-            # --- TAMBAHKAN BLOK PERAWATAN DI SINI (SETELAH KOLOM BAHAYA) ---
-            st.markdown(f"""
-            <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:16px;">
-                <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
-                <div style="color:#e2e8f0;line-height:1.6;">{perawatan_teks}</div>
-            </div>
-            """, unsafe_allow_html=True)
-
         st.markdown("")  # spasi antar instrumen
     for instrumen in tampil:
     
