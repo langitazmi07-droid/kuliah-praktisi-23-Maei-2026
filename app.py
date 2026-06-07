@@ -988,7 +988,7 @@ if menu == "🏠 Beranda":
             </span>
         </h1>
         <p style='color:#94a3b8;font-size:17px;max-width:500px;margin:0 auto 30px;line-height:1.7'>
-            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan
+            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan, dampak bahaya, dan perawatannya
         </p>
     </div>
     """, unsafe_allow_html=True)
