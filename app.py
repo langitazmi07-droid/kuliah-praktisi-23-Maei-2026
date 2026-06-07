@@ -974,8 +974,8 @@ def render_instrumen_analitik(foto_map: dict = None):
                 unsafe_allow_html=True)
  
     # ── Daftar Instrumen ─────────────────────────────────────
-        with st.expander(
-            f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
+    with st.expander(
+        f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
             expanded=False,
         ):
         st.markdown("")  # spasi antar instrumen
