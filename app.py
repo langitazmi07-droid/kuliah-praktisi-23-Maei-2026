@@ -1067,7 +1067,7 @@ if menu == "🏠 Beranda":
 elif menu == "🔬 Alat Laboratorium":
 
     st.title("🔬 Alat Laboratorium Kimia")
-    st.markdown("<p style='color:#64748b;margin-bottom:24px'>Klik ekspander setiap alat untuk melihat foto, fungsi, dan cara penggunaan lengkap.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#64748b;margin-bottom:24px'>Klik setiap alat untuk melihat foto, fungsi, dan cara penggunaan lengkap.</p>", unsafe_allow_html=True)
 
     # Filter kategori
     semua_kategori = ["Semua"] + sorted(set(a["kategori"] for a in alat_data))
@@ -1131,12 +1131,6 @@ elif menu == "🔬 Alat Laboratorium":
         for a in alat_data
     ])
     st.dataframe(df, use_container_width=True, hide_index=True)
-
-# =========================
-# ── INSTRUMEN ANALITIK ──
-# =========================
-elif menu == "🧪 Instrumen Analitik":
-    render_instrumen_analitik()
 
 # =========================
 # ── PANDUAN KESELAMATAN ──
