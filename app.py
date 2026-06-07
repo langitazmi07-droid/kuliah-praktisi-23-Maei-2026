@@ -1042,8 +1042,17 @@ def render_instrumen_analitik(foto_map: dict = None):
                 </div>
                 """, unsafe_allow_html=True)
  
+            # Perawatan full-width
+            perawatan_teks = data_perawatan.get(instrumen["kategori"], "Simpan instrumen di tempat kering dan bersih. Lakukan kalibrasi berkala sesuai prosedur.")
+            st.markdown(f"""
+            <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:8px;">
+                <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
+                <div style="color:#e2e8f0;line-height:1.6;">{perawatan_teks}</div>
+            </div>
+            """, unsafe_allow_html=True)
+
             st.markdown("")  # spasi antar instrumen
-    
+
 # =========================
 # ── BERANDA ──
 # =========================
