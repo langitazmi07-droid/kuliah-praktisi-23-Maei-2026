@@ -998,7 +998,7 @@ if menu == "🏠 Beranda":
     c1.metric("🧪 Total Alat & Instrumen", "26")
     c2.metric("📁 Total Kategori", "10")
     c3.metric("📝 Soal Kuis", "5")
-    c4.metric("📸 Foto Alat", "15")
+    c4.metric("📸 Foto Alat", "26")
 
     st.markdown("---")
 
@@ -1032,6 +1032,13 @@ elif menu == "🔬 Alat Laboratorium":
 
     st.title("🔬 Alat Laboratorium Kimia")
     st.markdown("<p style='color:#64748b;margin-bottom:24px'>Klik setiap alat untuk melihat foto, fungsi, dan cara penggunaan lengkap.</p>", unsafe_allow_html=True)
+
+    #Statistik
+        c1, c2, = st.columns(2)
+    c1.metric("🧪 Total Alat ", "15")
+    c2.metric("📁 Total Kategori", "10")
+
+    st.markdown("---")
 
     # Filter kategori
     semua_kategori = ["Semua"] + sorted(set(a["kategori"] for a in alat_data))
