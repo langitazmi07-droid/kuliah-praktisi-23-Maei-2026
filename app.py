@@ -893,7 +893,7 @@ with st.sidebar:
     st.session_state.current_menu = menu
 
 # =========================
-# ── INSTRUMEN LABORATORIUM ──
+# ──  INSTRUMEN LABORATORIUM  ──
 # =========================
 # FUNGSI RENDER HALAMAN
 def render_instrumen_analitik(foto_map: dict = None):
