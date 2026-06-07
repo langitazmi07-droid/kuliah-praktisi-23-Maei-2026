@@ -1129,12 +1129,15 @@ elif menu == "🔬 Alat Laboratorium":
                     <div class='label-kecil' style='color:#ef4444'>Perhatian & Bahaya</div>
                     <div style='color:#fca5a5;line-height:1.6'>{alat['bahaya']}</div>
                 </div>
-
-                <div class="info-box" style="background: rgba(236,72,153,0.08); border-left: 3px solid #ec4899;">
-                    <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
-                    <div style="color:#e2e8f0;">{alat['perawatan']}</div>
-                </div>
                 """, unsafe_allow_html=True)
+
+            # Kotak perawatan full-width di bawah dua kolom
+            st.markdown(f"""
+            <div class="info-box" style="background: rgba(236,72,153,0.08); border-left: 3px solid #ec4899; margin-top:8px;">
+                <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
+                <div style="color:#e2e8f0; line-height:1.6;">{alat['perawatan']}</div>
+            </div>
+            """, unsafe_allow_html=True)
 
     st.markdown("---")
 
@@ -1331,6 +1334,6 @@ elif menu == "📝 Kuis":
 # =========================
 st.markdown("""
 <div class='footer'>
-    Dibuat untuk mengampu Project matkul Logika Pemrograman Komputer semester 2 Politeknik AKA Bogor
+    Dibuat untuk mengampu Project mata kuliah Logika Pemrograman Komputer semester 2 Politeknik AKA Bogor
 </div>
 """, unsafe_allow_html=True)
