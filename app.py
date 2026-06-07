@@ -912,18 +912,19 @@ def render_instrumen_analitik():
         </p>
     </div>
     """, unsafe_allow_html=True)
-
-    # ── Filter ───────────────────────────────────────────────
-    semua_kategori = ["Semua"] + sorted({i["kategori"] for i in instrumen_data})
-    filter_kat = st.selectbox("🔍 Filter berdasarkan kategori:", semua_kategori)
     
-    #Statistik
+       #Statistik
     c1, c2, = st.columns(2)
     c1.metric("🧪 Total Alat ", "15")
     c2.metric("🔍 Total Kategori", "7")
 
     st.markdown("---")
  
+
+    # ── Filter ───────────────────────────────────────────────
+    semua_kategori = ["Semua"] + sorted({i["kategori"] for i in instrumen_data})
+    filter_kat = st.selectbox("🔍 Filter berdasarkan kategori:", semua_kategori)
+    
     tampil = (
         instrumen_data
         if filter_kat == "Semua"
