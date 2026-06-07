@@ -1034,7 +1034,7 @@ elif menu == "🔬 Alat Laboratorium":
     st.markdown("<p style='color:#64748b;margin-bottom:24px'>Klik setiap alat untuk melihat foto, fungsi, dan cara penggunaan lengkap.</p>", unsafe_allow_html=True)
 
     #Statistik
-        c1, c2, = st.columns(2)
+    c1, c2, = st.columns(2)
     c1.metric("🧪 Total Alat ", "15")
     c2.metric("📁 Total Kategori", "10")
 
