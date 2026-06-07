@@ -981,8 +981,8 @@ def render_instrumen_analitik(foto_map: dict = None):
         st.markdown("")  # spasi antar instrumen
     for instrumen in tampil:
     
-        with st.expander(
-            f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
+            with st.expander(
+                f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
             expanded=False,
         ):
             col_foto, col_info = st.columns([1, 2], gap="large")
