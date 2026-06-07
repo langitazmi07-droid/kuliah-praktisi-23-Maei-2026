@@ -4,7 +4,7 @@ import streamlit as st
 # KONFIGURASI HALAMAN
 # =========================
 st.set_page_config(
-    page_title="Panduan Operasional Alat Laboratorium Kimia",
+    page_title="Pengenalan Alat Laboratorium Kimia",
     page_icon="⚗️",
     layout="wide"
 )
@@ -895,7 +895,34 @@ with st.sidebar:
 # =========================
 # ── INSTRUMEN LABORATORIUM ──
 # =========================
-def render_instrumen_analitik():
+# FUNGSI RENDER HALAMAN
+def render_instrumen_analitik(foto_map: dict = None):
+    data_perawatan = {
+        "Spektroskopi": "Bersihkan komponen optik (kuvet, kristal ATR, nebulizer, torch) setelah digunakan. Lakukan kalibrasi berkala, jaga kebersihan area sampel, dan perhatikan kelembapan ruangan.",
+        "Kromatografi": "Rutin bersihkan jalur aliran (flush sistem), ganti spare part habis pakai (septum, liner, filter), dan pastikan kemurnian pelarut/gas pembawa sesuai spesifikasi.",
+        "Pengukuran Kimia": "Bilas elektroda/probe setelah pakai. Simpan elektroda pH dalam larutan penyimpanan (bukan akuades) dan lakukan kalibrasi rutin dengan larutan standar.",
+        "Analisis Air": "Bersihkan jalur sampel, jaga kebersihan vial/prisma dari sidik jari atau goresan, dan pastikan instrumen tertutup debu saat tidak digunakan.",
+        "Analisis Logam": "Bersihkan komponen optik dan nebulizer setelah digunakan. Lakukan kalibrasi berkala, jaga kebersihan area sampel, dan perhatikan kelembapan ruangan."
+    }
+    for instrumen in tampil:
+        warna = instrumen["warna_hex"]
+        # Ambil perawatan berdasarkan kategori, default jika tidak ditemukan
+        perawatan_teks = data_perawatan.get(instrumen["kategori"], "Pastikan instrumen selalu bersih, kalibrasi secara rutin, dan simpan dalam kondisi aman.")
+          # ... (Kolom foto dan informasi sama seperti sebelumnya)
+            # ... (Kolom cara kerja dan bahaya sama seperti sebelumnya)
+            
+            # --- TAMBAHKAN BLOK PERAWATAN DI SINI (SETELAH KOLOM BAHAYA) ---
+        st.markdown(f"""
+            <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:16px;">
+                <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
+                <div style="color:#e2e8f0;line-height:1.6;">{perawatan_teks}</div>
+            </div>
+            """, unsafe_allow_html=True)
+    """
+    Render halaman Instrumen Analitik.
+    foto_map: dict {nama_file: bytes} opsional, untuk menampilkan foto nyata.
+    """
+ 
     # ── Header ──────────────────────────────────────────────
     st.markdown("""
     <div style="
@@ -912,70 +939,111 @@ def render_instrumen_analitik():
         </p>
     </div>
     """, unsafe_allow_html=True)
-    
-       #Statistik
-    c1, c2, = st.columns(2)
-    c1.metric("🧪 Total Alat ", "15")
-    c2.metric("🔍 Total Kategori", "7")
-
-    st.markdown("---")
  
+    # ── Statistik ────────────────────────────────────────────
+    col1, col2, col3, col4 = st.columns(4)
+    kategori_unik = list({i["kategori"] for i in instrumen_data})
+    with col1:
+        st.metric("Total Instrumen", len(instrumen_data))
+    with col2:
+        st.metric("Kategori", len(kategori_unik))
+    with col3:
+        st.metric("Spektroskopi", sum(1 for i in instrumen_data if i["kategori"] == "Spektroskopi"))
+    with col4:
+        st.metric("Kromatografi", sum(1 for i in instrumen_data if i["kategori"] == "Kromatografi"))
 
+    st.markdown("""
+    <div style='text-align:center; color:#64748b; font-size:13px; 
+         margin-top:40px; padding:16px;
+         border-top:1px solid rgba(255,255,255,0.06)'>
+        🔬 Instrumen Analitik Laboratorium Kimia • Selalu ikuti prosedur keselamatan saat mengoperasikan instrumen
+    </div>
+    """, unsafe_allow_html=True)
+ 
     # ── Filter ───────────────────────────────────────────────
     semua_kategori = ["Semua"] + sorted({i["kategori"] for i in instrumen_data})
     filter_kat = st.selectbox("🔍 Filter berdasarkan kategori:", semua_kategori)
-    
+ 
     tampil = (
         instrumen_data
         if filter_kat == "Semua"
         else [i for i in instrumen_data if i["kategori"] == filter_kat]
     )
-
-    # Data Perawatan
-    data_perawatan = {
-        "Spektroskopi": "Bersihkan komponen optik setelah digunakan. Lakukan kalibrasi berkala dan jaga kelembapan ruangan.",
-        "Kromatografi": "Rutin bersihkan jalur aliran, ganti spare part habis pakai, dan pastikan kemurnian pelarut.",
-        "Pengukuran Kimia": "Bilas elektroda setelah pakai. Simpan elektroda pH dalam larutan penyimpanan.",
-        "Analisis Air": "Bersihkan jalur sampel dan jaga kebersihan vial/prisma.",
-        "Analisis Logam": "Bersihkan komponen optik dan nebulizer setelah digunakan."
-    }
+ 
+    st.markdown(f"<p style='color:#64748b; font-size:13px;'>Menampilkan {len(tampil)} instrumen</p>",
+                unsafe_allow_html=True)
  
     # ── Daftar Instrumen ─────────────────────────────────────
+    with st.expander(
+        f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
+            expanded=False,
+        ):
+        st.markdown("")  # spasi antar instrumen
     for instrumen in tampil:
-        warna = instrumen["warna_hex"]
-        perawatan_teks = data_perawatan.get(instrumen["kategori"], "Pastikan instrumen selalu bersih dan kalibrasi rutin.")
-        
-        with st.expander(f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}", expanded=False):
-            col_foto, col_info = st.columns([1, 2], gap="large")
+    
+            with st.expander(
+                f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
+            expanded=False,
+        ):
+                col_foto, col_info = st.columns([1, 2], gap="large")
  
+            # Kolom foto
             with col_foto:
-                st.image(instrumen["foto"], use_container_width=True, caption=instrumen["nama"])
-                st.markdown(f"<div style='text-align:center'><span class='badge' style='background:{warna}22;color:{warna}'>{instrumen['kategori']}</span></div>", unsafe_allow_html=True)
+                try:
+                    st.image(instrumen["foto"], use_container_width=True, caption=instrumen["nama"])
+                except Exception:
+                    st.markdown(f"<div style='text-align:center;padding:40px'><div style='font-size:60px'>{instrumen['emoji']}</div><p style='color:#64748b;font-size:12px'>Foto tidak tersedia</p></div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='text-align:center;margin-top:8px'><span style='display:inline-block;padding:4px 14px;border-radius:999px;font-size:11px;font-weight:700;background:{warna}22;color:{warna};border:1px solid {warna}44'>{instrumen['kategori']}</span></div>", unsafe_allow_html=True)
  
+            # Kolom informasi
             with col_info:
+                # Penjelasan
                 st.markdown(f"""
-                <div class="info-box box-awam"><div class="label-kecil" style="color:#10b981;">📋 Penjelasan</div>{instrumen['penjelasan']}</div>
-                <div class="info-box box-cara"><div class="label-kecil" style="color:#3b82f6;">⚙️ Fungsi</div>{"".join(f"<li>{f}</li>" for f in instrumen['fungsi'])}</div>
+                <div class="info-box box-awam">
+                    <div class="label-kecil" style="color:#10b981;">📋 Penjelasan</div>
+                    <div style="color:#e2e8f0;">{instrumen['penjelasan']}</div>
+                </div>
                 """, unsafe_allow_html=True)
  
+                # Fungsi
+                fungsi_html = "".join(f"<li style='margin-bottom:4px;'>{f}</li>" for f in instrumen["fungsi"])
+                st.markdown(f"""
+                <div class="info-box box-cara">
+                    <div class="label-kecil" style="color:#3b82f6;">⚙️ Fungsi</div>
+                    <ul style="color:#e2e8f0; margin:0; padding-left:18px;">{fungsi_html}</ul>
+                </div>
+                """, unsafe_allow_html=True)
+ 
+            # Cara kerja & bahaya — full width di bawah
+            st.markdown("<br>", unsafe_allow_html=True)
             col_cara, col_bahaya = st.columns(2, gap="medium")
+ 
             with col_cara:
+                langkah_html = "".join(
+                    f"<li style='margin-bottom:6px;'>{l}</li>"
+                    for l in instrumen["cara_kerja"]
+                )
                 st.markdown(f"""
-                <div class="info-box box-fungsi"><div class="label-kecil" style="color:#60a5fa;">🔧 Cara Kerja</div>{"".join(f"<li>{l}</li>" for l in instrumen['cara_kerja'])}</div>
+                <div class="info-box box-fungsi" style="height:100%;">
+                    <div class="label-kecil" style="color:#60a5fa;">🔧 Cara Kerja</div>
+                    <ol style="color:#e2e8f0; margin:0; padding-left:18px;">{langkah_html}</ol>
+                </div>
                 """, unsafe_allow_html=True)
+ 
             with col_bahaya:
+                bahaya_html = "".join(
+                    f"<li style='margin-bottom:6px;'>{b}</li>"
+                    for b in instrumen["bahaya"]
+                )
                 st.markdown(f"""
-                <div class="info-box box-bahaya"><div class="label-kecil" style="color:#ef4444;">⚠️ Bahaya & Keselamatan</div>{"".join(f"<li>{b}</li>" for b in instrumen['bahaya'])}</div>
+                <div class="info-box box-bahaya" style="height:100%;">
+                    <div class="label-kecil" style="color:#ef4444;">⚠️ Bahaya & Keselamatan</div>
+                    <ul style="color:#fca5a5; margin:0; padding-left:18px;">{bahaya_html}</ul>
+                </div>
                 """, unsafe_allow_html=True)
-            
-            # Box Perawatan
-            st.markdown(f"""
-            <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:16px;">
-                <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
-                <div style="color:#e2e8f0;line-height:1.6;">{perawatan_teks}</div>
-            </div>
-            """, unsafe_allow_html=True)
-
+ 
+            st.markdown("")  # spasi antar instrumen
+    
 # =========================
 # ── BERANDA ──
 # =========================
@@ -986,17 +1054,17 @@ if menu == "🏠 Beranda":
         <div style='display:inline-block;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);
              border-radius:999px;padding:6px 18px;font-size:12px;color:#60a5fa;
              letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:20px'>
-            Kenali Alat Laboratorium Kimia
+            🔬 Panduan Untuk Pemula
         </div>
         <h1 style='font-size:clamp(28px,5vw,52px);line-height:1.2;margin-bottom:16px'>
-            Panduan Operasional<br>
+            Kenali Alat<br>
             <span style='background:linear-gradient(135deg,#3b82f6,#8b5cf6,#06b6d4);
                   -webkit-background-clip:text;-webkit-text-fill-color:transparent'>
-                Alat Laboratorium Kimia
+                Laboratorium Kimia
             </span>
         </h1>
         <p style='color:#94a3b8;font-size:17px;max-width:500px;margin:0 auto 30px;line-height:1.7'>
-            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan, dampak bahaya, dan perawatannya
+            Pelajari alat - alat laboratorium kimia , penjelasan lengkap, mudah dipahami, disertai panduan keselamatan
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -1006,7 +1074,7 @@ if menu == "🏠 Beranda":
     c1.metric("🧪 Total Alat & Instrumen", "26")
     c2.metric("📁 Total Kategori", "10")
     c3.metric("📝 Soal Kuis", "5")
-    c4.metric("📸 Foto Alat", "26")
+    c4.metric("📸 Foto Alat", "15")
 
     st.markdown("---")
 
@@ -1041,13 +1109,6 @@ elif menu == "🔬 Alat Laboratorium":
     st.title("🔬 Alat Laboratorium Kimia")
     st.markdown("<p style='color:#64748b;margin-bottom:24px'>Klik setiap alat untuk melihat foto, fungsi, dan cara penggunaan lengkap.</p>", unsafe_allow_html=True)
 
-    #Statistik
-    c1, c2, = st.columns(2)
-    c1.metric("🧪 Total Alat ", "15")
-    c2.metric("🔍 Total Kategori", "7")
-
-    st.markdown("---")
-
     # Filter kategori
     semua_kategori = ["Semua"] + sorted(set(a["kategori"] for a in alat_data))
     filter_kat = st.selectbox("🗂️ Filter Kategori", semua_kategori)
@@ -1075,7 +1136,7 @@ elif menu == "🔬 Alat Laboratorium":
 
             with col_info:
                 st.markdown(f"""
-                <div class='info-box box-awam'>
+                   <div class='info-box box-awam'>
                     <div class='label-kecil' style='color:#10b981'>💡 Penjelasan</div>
                     <div style='color:#e2e8f0;line-height:1.6'>{alat['penjelasan_awam']}</div>
                 </div>
@@ -1093,7 +1154,7 @@ elif menu == "🔬 Alat Laboratorium":
                 </div>
                 """, unsafe_allow_html=True)
 
-            # Perawatan full-width di paling bawah
+            # Cara penggunaan & bahaya full-width
             st.markdown(f"""
             <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:8px;">
                 <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
@@ -1181,9 +1242,47 @@ elif menu == "📖 Panduan Keselamatan":
 # =========================
 # ── ABOUT US ──
 # =========================
-elif menu == "ℹ️ About Us":
-    st.title("About Us")
-    st.write("Aplikasi ini dibuat untuk membantu siswa memahami alat laboratorium kimia dengan cara yang interaktif.")
+elif menu == "ℹ️ Tentang Kami":
+    st.markdown("""
+    <div style="text-align:center; padding: 32px 0 16px 0;">
+        <h1 style="font-size:2rem; margin-bottom:8px;">ℹ️ Tentang Kami</h1>
+        <p style="color:#64748b; font-size:15px;">Aplikasi ini dibuat untuk membantu memahami alat laboratorium kimia secara interaktif.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.3);
+         border-radius:16px;padding:20px;text-align:center;margin-bottom:28px;">
+        <div style="font-size:18px;font-weight:700;color:#60a5fa;">Kelas 1A</div>
+        <div style="color:#94a3b8;font-size:14px;margin-top:6px;">Program Studi Analisis Kimia — Politeknik AKA Bogor</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("### 👥 Anggota Tim")
+    anggota = [
+        {"nama": "Adam Pastika Samas",       "nim": "2560553", "emoji": "👨‍🔬"},
+        {"nama": "Cesilya Putri Mardita",     "nim": "2560599", "emoji": "👩‍🔬"},
+        {"nama": "Moch Langit Azmi Alifi",    "nim": "2560672", "emoji": "👨‍🔬"},
+        {"nama": "Sarah Nabila Muhayyar",     "nim": "2560773", "emoji": "👩‍🔬"},
+        {"nama": "Octavia",                   "nim": "2560734", "emoji": "👩‍🔬"},
+    ]
+
+    for a in anggota:
+        st.markdown(f"""
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+             border-radius:14px;padding:16px 24px;margin-bottom:10px;">
+            <span style="font-size:32px;">{a["emoji"]}</span>
+            <span style="font-size:16px;font-weight:700;color:#f1f5f9;margin-left:12px;">{a["nama"]}</span>
+            <span style="font-size:13px;color:#64748b;margin-left:12px;">NIM: {a["nim"]}</span>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align:center;margin-top:32px;color:#334155;font-size:13px;
+         border-top:1px solid rgba(255,255,255,0.06);padding-top:20px;">
+        ⚗️ Pengenalan Alat Laboratorium Kimia • Politeknik AKA Bogor • 2025/2026
+    </div>
+    """, unsafe_allow_html=True)
 
 # =========================
 # ── KUIS ──
