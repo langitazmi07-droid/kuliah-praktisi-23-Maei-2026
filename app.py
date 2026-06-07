@@ -1111,7 +1111,7 @@ elif menu == "🔬 Alat Laboratorium":
 
             with col_info:
    st.markdown(f"""
-                <div class='info-box box-awam'>
+                   <div class='info-box box-awam'>
                     <div class='label-kecil' style='color:#10b981'>💡 Penjelasan</div>
                     <div style='color:#e2e8f0;line-height:1.6'>{alat['penjelasan_awam']}</div>
                 </div>
@@ -1127,7 +1127,8 @@ elif menu == "🔬 Alat Laboratorium":
                     <div class='label-kecil' style='color:#ef4444;'>⚠️ Bahaya & Keselamatan</div>
                     <div style='color:#fca5a5;line-height:1.6'>{alat['bahaya']}</div>
                 </div>
-                """, unsafe_allow_html=True)
+
+    """, unsafe_allow_html=True)
 
             # Cara penggunaan & bahaya full-width
             st.markdown(f"""
