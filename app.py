@@ -963,15 +963,17 @@ def render_instrumen_analitik(foto_map: dict = None):
     # ── Daftar Instrumen ─────────────────────────────────────
     for instrumen in tampil:
         warna = instrumen["warna_hex"]
+        # Ambil perawatan berdasarkan kategori, default jika tidak ditemukan
         perawatan_teks = data_perawatan.get(instrumen["kategori"], "Pastikan instrumen selalu bersih, kalibrasi secara rutin, dan simpan dalam kondisi aman.")
 
- 
         with st.expander(
             f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
             expanded=False,
         ):
-            col_foto, col_info = st.columns([1, 2], gap="large")
+            # ... (Kolom foto dan informasi sama seperti sebelumnya)
+            # ... (Kolom cara kerja dan bahaya sama seperti sebelumnya)
             
+            # --- TAMBAHKAN BLOK PERAWATAN DI SINI (SETELAH KOLOM BAHAYA) ---
             st.markdown(f"""
             <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:16px;">
                 <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
@@ -980,6 +982,13 @@ def render_instrumen_analitik(foto_map: dict = None):
             """, unsafe_allow_html=True)
 
         st.markdown("")  # spasi antar instrumen
+    for instrumen in tampil:
+    
+        with st.expander(
+            f"{instrumen['emoji']}  {instrumen['nama']} — {instrumen['nama_lengkap']}",
+            expanded=False,
+        ):
+            col_foto, col_info = st.columns([1, 2], gap="large")
  
             # Kolom foto
             with col_foto:
