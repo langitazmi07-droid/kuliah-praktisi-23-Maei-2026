@@ -4,7 +4,7 @@ import streamlit as st
 # KONFIGURASI HALAMAN
 # =========================
 st.set_page_config(
-    page_title="Pengenalan Alat Laboratorium Kimia",
+    page_title="Panduan Operasional Alat Laboratorium Kimia",
     page_icon="⚗️",
     layout="wide"
 )
