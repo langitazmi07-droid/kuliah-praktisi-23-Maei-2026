@@ -916,6 +916,13 @@ def render_instrumen_analitik():
     # ── Filter ───────────────────────────────────────────────
     semua_kategori = ["Semua"] + sorted({i["kategori"] for i in instrumen_data})
     filter_kat = st.selectbox("🔍 Filter berdasarkan kategori:", semua_kategori)
+    
+    #Statistik
+    c1, c2, = st.columns(2)
+    c1.metric("🧪 Total Alat ", "15")
+    c2.metric("🔍 Total Kategori", "7")
+
+    st.markdown("---")
  
     tampil = (
         instrumen_data
