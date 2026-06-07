@@ -1123,14 +1123,6 @@ elif menu == "🔬 Alat Laboratorium":
 
             # Cara penggunaan & bahaya full-width
             st.markdown(f"""
-            <div class='info-box box-cara' style='margin-top:8px;'>
-                <div class='label-kecil' style='color:#60a5fa;'>✏️ CARA PENGGUNAAN</div>
-                <div style='color:#e2e8f0;line-height:1.6'>{alat['cara_guna']}</div>
-            </div>
-            <div class='info-box box-bahaya' style='margin-top:8px;'>
-                <div class='label-kecil' style='color:#ef4444;'>⚠️ BAHAYA & KESELAMATAN</div>
-                <div style='color:#fca5a5;line-height:1.6'>{alat['bahaya']}</div>
-            </div>
             <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:8px;">
                 <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
                 <div style="color:#e2e8f0;line-height:1.6;">{alat['perawatan']}</div>
