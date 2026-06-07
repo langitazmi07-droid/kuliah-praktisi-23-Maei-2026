@@ -1095,11 +1095,11 @@ elif menu == "🔬 Alat Laboratorium":
     for alat in alat_tampil:
         with st.expander(f"{alat['emoji']}  **{alat['nama']}** — *{alat['kategori']}*"):
 
-            # Foto + badge full-width
-            col_img, col_badge = st.columns([1, 2])
-            with col_img:
+            # Baris atas: foto kiri, penjelasan+fungsi kanan
+            col_foto, col_info = st.columns([1, 1.4])
+
+            with col_foto:
                 st.image(alat["foto"], use_container_width=True, caption=alat["nama"])
-            with col_badge:
                 st.markdown(f"""
                 <div style='display:flex;gap:8px;flex-wrap:wrap;margin-top:10px'>
                     <span class='badge' style='background:rgba(255,255,255,0.06);color:#94a3b8;border-color:rgba(255,255,255,0.1)'>
@@ -1109,31 +1109,42 @@ elif menu == "🔬 Alat Laboratorium":
                 </div>
                 """, unsafe_allow_html=True)
 
-            # Semua kotak info full-width
+            with col_info:
+                st.markdown(f"""
+                <div class='info-box box-awam'>
+                    <div class='label-kecil' style='color:#10b981'>💡 Penjelasan</div>
+                    <div style='color:#e2e8f0;line-height:1.6'>{alat['penjelasan_awam']}</div>
+                </div>
+                <div class='info-box box-fungsi'>
+                    <div class='label-kecil' style='color:#3b82f6'>⚙️ Fungsi</div>
+                    <div style='color:#e2e8f0;line-height:1.6'>{alat['fungsi']}</div>
+                </div>
+                """, unsafe_allow_html=True)
+
+            # Baris bawah: cara penggunaan & bahaya berdampingan
+            col_cara, col_bahaya = st.columns(2, gap="medium")
+
+            with col_cara:
+                st.markdown(f"""
+                <div class='info-box box-cara' style='height:100%;'>
+                    <div class='label-kecil' style='color:#60a5fa;'>✏️ CARA PENGGUNAAN</div>
+                    <div style='color:#e2e8f0;line-height:1.6'>{alat['cara_guna']}</div>
+                </div>
+                """, unsafe_allow_html=True)
+
+            with col_bahaya:
+                st.markdown(f"""
+                <div class='info-box box-bahaya' style='height:100%;'>
+                    <div class='label-kecil' style='color:#ef4444;'>⚠️ BAHAYA & KESELAMATAN</div>
+                    <div style='color:#fca5a5;line-height:1.6'>{alat['bahaya']}</div>
+                </div>
+                """, unsafe_allow_html=True)
+
+            # Perawatan full-width di paling bawah
             st.markdown(f"""
-            <div class='info-box box-fungsi' style='margin-top:12px;'>
-                <div class='label-kecil' style='color:#3b82f6'>Fungsi Utama</div>
-                <div style='color:#e2e8f0;line-height:1.6'>{alat['fungsi']}</div>
-            </div>
-
-            <div class='info-box box-awam'>
-                <div class='label-kecil' style='color:#10b981'>💡 Penjelasan Sederhana</div>
-                <div style='color:#e2e8f0;line-height:1.6'>{alat['penjelasan_awam']}</div>
-            </div>
-
-            <div class='info-box box-cara'>
-                <div class='label-kecil' style='color:#3b82f6'>📋 Cara Penggunaan</div>
-                <div style='color:#e2e8f0;line-height:1.6'>{alat['cara_guna']}</div>
-            </div>
-
-            <div class='info-box box-bahaya'>
-                <div class='label-kecil' style='color:#ef4444'>Perhatian & Bahaya</div>
-                <div style='color:#fca5a5;line-height:1.6'>{alat['bahaya']}</div>
-            </div>
-
-            <div class="info-box" style="background: rgba(236,72,153,0.08); border-left: 3px solid #ec4899;">
+            <div class="info-box" style="background:rgba(236,72,153,0.08);border-left:3px solid #ec4899;margin-top:8px;">
                 <div class="label-kecil" style="color:#ec4899;">🛠️ CARA PERAWATAN</div>
-                <div style="color:#e2e8f0; line-height:1.6;">{alat['perawatan']}</div>
+                <div style="color:#e2e8f0;line-height:1.6;">{alat['perawatan']}</div>
             </div>
             """, unsafe_allow_html=True)
 
