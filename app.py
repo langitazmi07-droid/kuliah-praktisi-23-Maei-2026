@@ -1054,10 +1054,10 @@ if menu == "🏠 Beranda":
         <div style='display:inline-block;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);
              border-radius:999px;padding:6px 18px;font-size:12px;color:#60a5fa;
              letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:20px'>
-            Panduan Operasional
+            Kenali Alat Laboratorium
         </div>
         <h1 style='font-size:clamp(28px,5vw,52px);line-height:1.2;margin-bottom:16px'>
-            Kenali Alat<br>
+            Panduan Operasional<br>
             <span style='background:linear-gradient(135deg,#3b82f6,#8b5cf6,#06b6d4);
                   -webkit-background-clip:text;-webkit-text-fill-color:transparent'>
                 Alat Laboratorium Kimia
@@ -1074,7 +1074,7 @@ if menu == "🏠 Beranda":
     c1.metric("🧪 Total Alat & Instrumen", "26")
     c2.metric("📁 Total Kategori", "10")
     c3.metric("📝 Soal Kuis", "5")
-    c4.metric("📸 Foto Alat", "15")
+    c4.metric("📸 Foto Alat", "26")
 
     st.markdown("---")
 
