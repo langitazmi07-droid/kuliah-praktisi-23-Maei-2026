@@ -35,7 +35,7 @@ alat_data = [
         "nama": "Erlenmeyer",
         "emoji": "⚗️",
         "kategori": "Wadah",
-        "foto": "erlenmeyer labu.jpg",
+        "foto": "erlen.jfif",
         "fungsi": "Wadah berbentuk kerucut dengan leher sempit, digunakan untuk titrasi dan melarutkan zat.",
         "penjelasan_awam": (
             "Bentuknya seperti botol dengan badan lebar di bawah dan leher sempit di atas. "
@@ -52,7 +52,7 @@ alat_data = [
         "nama": "Buret",
         "emoji": "🌡️",
         "kategori": "Pengukur Volume",
-        "foto": "burett.jpg",
+        "foto": "buret.jfif",
         "fungsi": "Tabung panjang bergraduasi untuk mengukur dan mengeluarkan volume larutan secara presisi.",
         "penjelasan_awam": (
             "Buret adalah alat laboratorium berbentuk silinder panjang dari kaca yang dilengkapi dengan skala ukur dan keran"
